@@ -1,18 +1,20 @@
-# Working Title:
-## Name of Lead Designer(s): 
+# Working Title: 
+## Name of Lead Designer(s): Melanie Lo
 
-* Main game genre(s): 
+* Main game genre(s): Its a sports/ arcade game.
 
-* Theme/Look:
+* Theme/Look: The games look is going to be a pixelated style game.
 
 ## Materials & Methods
 _Which Game Engine will you be using? Where/how will get it? How much does it cost and have you already purchased a licence? Will you be able to run the Game Engine on the school computers? If not, how will you work on your project in school (bring in own laptop?, etc)?_
 
+I will be using maybe scratch or proccessing. I will download the things I need on my personal laptop. I'm not sure if i need to purchase a license. The game will be able to run on the school computers because I've seen it in the school laptops. I will use my own personal laptop.
+
 ## Game Specifications
 ### Level 1
-* Description of look or layout:
-* Main Skills to be mastered by the player:
-* How to beat the level:
+* Description of look or layout:The look of the game will be pixilated throughout the game.
+* Main Skills to be mastered by the player: To beat the master just move the mouse or keypad is optional.
+* How to beat the level: First player to get to 5 points moves to level 2
 
 ### Level 2
 * Description of look or layout:
