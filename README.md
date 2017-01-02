@@ -15,7 +15,7 @@
 <table style="width:100%">
   <tr>
     <th><img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg" alt="some_text" style="width:800;height:450;"></th>
-    <th><img src="Lulu.gif" width="128" height="128"><h1 style="color:blue;">About me and this website:</h1>
+    <th><img src="https://s-media-cache-ak0.pinimg.com/originals/06/91/0a/06910a15377805479a61eb9e9a6ca390.gif" width="128" height="128"><h1 style="color:blue;">About me and this website:</h1>
 <br>
 <p style="color:Yellow;"><sub>Hello this is a none benefitial website for coaching on LoL.Almost all information is from me(with a bit of help
 from references of coarse),however,it is biased with my own opinions and views of the game so not all of it will help 
