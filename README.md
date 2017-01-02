@@ -5,7 +5,7 @@
 
 
 
-<body background="Summoners_rift_platform.png">
+<body background="http://vignette3.wikia.nocookie.net/leagueoflegends/images/d/d3/Summoners_rift_platform.png/revision/latest?cb=20160216121609">
 
 <h1 style="color:blue;">LoL Coaching,By Melvin Tran</h1>
 <p style="color:Yellow;"><b>Summoner Name: EIcIco
