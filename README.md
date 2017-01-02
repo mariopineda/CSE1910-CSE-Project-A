@@ -5,7 +5,7 @@
 
 
 
-<body background="http://na.leagueoflegends.com/board/attachment.php?s=&attachmentid=744478&d=1375225073">
+<body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
 
 <h1 style="color:blue;">LoL Coaching,By Melvin Tran</h1>
 <p style="color:Yellow;"><b>Summoner Name: EIcIco
