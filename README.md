@@ -10,9 +10,7 @@ div {
     padding-bottom: 50px;
     padding-left: 100px;
 }
-div2 {
-     border: 1px solid black;
-     {
+
      
 </style>
 </Head>
@@ -39,7 +37,7 @@ you.</p>
 </th> 
   
   <tr>
-  <div2><td><p>Click on these links below to be redirected to the other parts of this website.</p><nav>
+  <td><p>Click on these links below to be redirected to the other parts of this website.</p><nav>
   <ul>
     <li><a href="https://melvin-tran-cs.github.io/Reference-Links/">Reference Links</a></li>
     <li><a href="https://melvin-tran-cs.github.io/Itemization/">Itemization/Decision Making</a></li>
@@ -47,7 +45,7 @@ you.</p>
     <li><a href="Gamer's Mindset.html">Gamer's Mindset</a></li>
     <li><a href="Late Game.html">Late game</a></li>
   </ul>
-  </nav></td></div2>
+  </nav></td>
     <td></td> 
     <td></td>
   </tr>
