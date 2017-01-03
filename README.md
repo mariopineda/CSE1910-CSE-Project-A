@@ -1,4 +1,4 @@
-
+<DOCTYPE html>
 <html>
 <Head>
 <title>LoL Coaching</title>
