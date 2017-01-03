@@ -1,12 +1,15 @@
 <DOCTYPE html>
 <html>
+<style>
 <Head>
+body {
+    background="http://5pots.com/img/upload/SR%20Wallpaper.jpg"}
 
 <title style="color;Blue">LoL Coaching</title>
 
 
 
-<body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
+http://5pots.com/img/upload/SR%20Wallpaper.jpg
 
 <h1>LoL Coaching,By Melvin Tran</h1>
 <p style="color:Yellow;"><b>Summoner Name: EIcIco
