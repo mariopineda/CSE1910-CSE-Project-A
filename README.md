@@ -27,20 +27,20 @@ div2 {
 <body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
 
 
-<div2><h1><b>LoL Coaching,By Melvin Tran</b></h1>
+<h1><b>LoL Coaching,By Melvin Tran</b></h1>
 <br>
 <p style="color:Yellow;"><b>Summoner Name: EIcIco
   Region:North America
-  Elo:Plat 1.</b></p></div2>
+  Elo:Plat 1.</b></p>
 
 <table style="width:100%">
   <tr>
   <td><img src="http://s.lolstatic.com/site/ekko-comic/f4c70d670bccb225431148424fc4900fc49da818/issue/01/pages/en_US/12/12_1.jpg" width="400" height="120"></td>
     <th><img src="http://i.imgur.com/4eSpH89.gif" width="300" height="128"><h1 style="color:blue;">About me and this website:</h1>
 <br>
-<p style="color:red;">Hello this is a non-benefitial website for coaching on LoL.Almost all information is from me(with a bit of help
+<div2><p style="color:red;">Hello this is a non-benefitial website for coaching on LoL.Almost all information is from me(with a bit of help
 from references of coarse),however,it is biased with my own opinions and views of the game so not all of it will help 
-you.</p>
+you.</p></div2>
 </th> 
   
   <tr>
