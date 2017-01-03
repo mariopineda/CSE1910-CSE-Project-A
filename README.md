@@ -13,10 +13,10 @@ div {
 div2 {
     border: 1px solid black;
     background-color: lightgrey;
-    padding-top: 0px;
-    padding-right: 500px;
-    padding-bottom: 50px;
-    padding-left: 50px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
 }
 </style>
 </Head>
