@@ -27,11 +27,7 @@ div {
 <table style="width:100%">
   <tr>
   <td><style>
-  img.resize{
-   max-width:50%;
-   max-height:50%;
-}
-image=:url("http://s.lolstatic.com/site/ekko-comic/f4c70d670bccb225431148424fc4900fc49da818/issue/01/pages/en_US/12/12_1.jpg");
+ 
   </style>
     
     </td>
