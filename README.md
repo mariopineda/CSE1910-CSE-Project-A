@@ -26,7 +26,7 @@ you.</sub></p>
   <tr>
     <td><nav>
   <ul>
-    <li><a href="Reference Links.html">Reference Links</a></li>
+    <li><a href="https://melvin-tran-cs.github.io/Reference-Links/">Reference Links</a></li>
     <li><a href="https://melvin-tran-cs.github.io/Itemization/">Itemization/Decision Making</a></li>
     <li><a href="Strategies and Laning Phase.html">Strategies/Laning Phase</a></li>
     <li><a href="Gamer's Mindset.html">Gamer's Mindset</a></li>
