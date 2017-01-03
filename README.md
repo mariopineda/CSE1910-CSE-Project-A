@@ -13,7 +13,7 @@ div {
 div2 {
     border: 1px solid black;
     background-color: lightgrey;
-    padding-top: 200px;
+    padding-top: 5px;
     padding-right: 50px;
     padding-bottom: 50px;
     padding-left: 200px;
