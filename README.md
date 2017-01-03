@@ -17,7 +17,7 @@
     <th><img src="http://s.lolstatic.com/site/ekko-comic/f4c70d670bccb225431148424fc4900fc49da818/issue/01/pages/en_US/12/12_1.jpg" style="width:500;height:450;"></th>
     <th><img src="http://i.imgur.com/4eSpH89.gif" width="300" height="128"><h1 style="color:blue;">About me and this website:</h1>
 <br>
-<p style="color:Yellow;"><sub>Hello this is a none benefitial website for coaching on LoL.Almost all information is from me(with a bit of help
+<p style="color:red;"><sub>Hello this is a none benefitial website for coaching on LoL.Almost all information is from me(with a bit of help
 from references of coarse),however,it is biased with my own opinions and views of the game so not all of it will help 
 you.</sub></p>
 </th> 
