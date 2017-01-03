@@ -10,13 +10,11 @@ div {
     padding-bottom: 50px;
     padding-left: 100px;
 }
-
-
-     
+p.solid {border-style: solid;}
 </style>
 </Head>
 
-<title class="solid" style="color;Blue">LoL Coaching</title>
+<title class="solid">LoL Coaching</title>
 
 
 <body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
