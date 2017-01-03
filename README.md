@@ -35,7 +35,7 @@ you.</p>
 </th> 
   
   <tr>
-    <td><nav>
+  <td><p>Click on these links below to be redirected to the other parts of this website.</p><nav>
   <ul>
     <li><a href="https://melvin-tran-cs.github.io/Reference-Links/">Reference Links</a></li>
     <li><a href="https://melvin-tran-cs.github.io/Itemization/">Itemization/Decision Making</a></li>
