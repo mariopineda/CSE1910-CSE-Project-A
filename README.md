@@ -14,7 +14,7 @@ div2 {
     border: 1px solid black;
     background-color: lightgrey;
     padding-top: 50px;
-    padding-right: 50px;
+    padding-right: 500px;
     padding-bottom: 50px;
     padding-left: 50px;
 }
