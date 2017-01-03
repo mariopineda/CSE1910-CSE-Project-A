@@ -10,14 +10,7 @@ div {
     padding-bottom: 50px;
     padding-left: 100px;
 }
-div2 {
-    border: 1px solid black;
-    background-color: lightgrey;
-    padding-top: 5px;
-    padding-right: 500px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-}
+
 </style>
 </Head>
 
@@ -38,9 +31,9 @@ div2 {
   <td><img src="http://s.lolstatic.com/site/ekko-comic/f4c70d670bccb225431148424fc4900fc49da818/issue/01/pages/en_US/12/12_1.jpg" width="400" height="120"></td>
     <th><img src="http://i.imgur.com/4eSpH89.gif" width="300" height="128"><h1 style="color:blue;">About me and this website:</h1>
 <br>
-<div2><p style="color:red;">Hello this is a non-benefitial website for coaching on LoL.Almost all information is from me(with a bit of help
+<p style="color:red;">Hello this is a non-benefitial website for coaching on LoL.Almost all information is from me(with a bit of help
 from references of coarse),however,it is biased with my own opinions and views of the game so not all of it will help 
-you.</p></div2>
+you.</p>
 </th> 
   
   <tr>
