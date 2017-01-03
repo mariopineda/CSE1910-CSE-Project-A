@@ -21,13 +21,13 @@ div2 {
 </style>
 </Head>
 
-><title>LoL Coaching</title>
+<title>LoL Coaching</title>
 
 
 <body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
 
 
-<h1>LoL Coaching,By Melvin Tran</h1>
+<div2><h1>LoL Coaching,By Melvin Tran</h1></div2>
 <br>
 <p style="color:Yellow;"><b>Summoner Name: EIcIco
   Region:North America
