@@ -7,7 +7,7 @@
 
 <body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
 
-<h1 style="color:blue;">LoL Coaching,By Melvin Tran</h1>
+<h1>LoL Coaching,By Melvin Tran</h1>
 <p style="color:Yellow;"><b>Summoner Name: EIcIco
   Region:North America
   Elo:Plat 1.</b></p>
@@ -40,7 +40,5 @@ you.</sub></p>
     <td></td> 
     <td></td>
   </tr>
-  </table>
-  </body>
-  </html>
+  
 
