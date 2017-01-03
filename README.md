@@ -13,7 +13,7 @@ div {
 div2 {
     border: 1px solid black;
     background-color: lightgrey;
-    padding-top: 0px;
+    padding-top: 50px;
     padding-right: 500px;
     padding-bottom: 50px;
     padding-left: 50px;
@@ -27,7 +27,7 @@ div2 {
 <body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
 
 
-<div2><h1>LoL Coaching,By Melvin Tran</h1></div2>
+<div2><h1><b>LoL Coaching,By Melvin Tran</b></h1></div2>
 <br>
 <p style="color:Yellow;"><b>Summoner Name: EIcIco
   Region:North America
