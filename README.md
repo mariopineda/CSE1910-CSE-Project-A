@@ -1,6 +1,17 @@
 <DOCTYPE html>
 <html>
 <Head>
+<style>
+div {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+</style>
+</head>
 
 <title style="color;Blue">LoL Coaching</title>
 
