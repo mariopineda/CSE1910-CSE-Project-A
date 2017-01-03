@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <html>
 <Head>
-<title>LoL Coaching</title>
+<title style="color;Blue">LoL Coaching</title>
 
 
 
