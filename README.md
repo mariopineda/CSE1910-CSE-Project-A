@@ -10,7 +10,7 @@ div {
     padding-bottom: 50px;
     padding-left: 100px;
 }
-t.solid {border-style: solid;}
+
 
      
 </style>
