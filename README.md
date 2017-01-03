@@ -16,7 +16,7 @@ div2 {
     padding-top: 50px;
     padding-right: 500px;
     padding-bottom: 50px;
-    padding-left: 50px;
+    padding-left: 500px;
 }
 </style>
 </Head>
