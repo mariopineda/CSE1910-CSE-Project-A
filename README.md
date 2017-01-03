@@ -26,7 +26,7 @@ div {
 
 <table style="width:100%">
   <tr>
-  <td><img src="http://s.lolstatic.com/site/ekko-comic/f4c70d670bccb225431148424fc4900fc49da818/issue/01/pages/en_US/12/12_1.jpg"></td>
+  <td><img src="http://s.lolstatic.com/site/ekko-comic/f4c70d670bccb225431148424fc4900fc49da818/issue/01/pages/en_US/12/12_1.jpg" width="200" height="40"></td>
     <th><img src="http://i.imgur.com/4eSpH89.gif" width="300" height="128"><h1 style="color:blue;">About me and this website:</h1>
 <br>
 <p style="color:red;"><sub>Hello this is a non-benefitial website for coaching on LoL.Almost all information is from me(with a bit of help
