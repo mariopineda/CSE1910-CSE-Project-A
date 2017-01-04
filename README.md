@@ -38,7 +38,7 @@ padding-top: 50px;
     <th><img src="http://i.imgur.com/4eSpH89.gif" width="300" height="128"><h1 style="color:blue;">About me and this website:</h1>
 <br>
 <p style="color:red;">Hello this is a non-benefitial website for coaching on LoL.Almost all information is from me(with a bit of help
-from references of coarse),however,it is biased with my own opinions and views of the game so not all of it will help 
+from references of course),however,it is biased with my own opinions and views of the game so not all of it will help 
 you.</p>
 </th> 
   
