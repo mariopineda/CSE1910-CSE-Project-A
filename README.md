@@ -55,4 +55,10 @@ you.</p>
     <td></td>
   </tr>
   
-
+  </body>
+  <footer>
+  <p>Posted by: Melvin Tran</p>
+  <p>Contact information: <a href="bobthebilbo@gmail.com">
+   bobthebilbo@gmail.com</a>.</p>
+</footer>
+  </html>
