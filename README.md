@@ -20,7 +20,7 @@ div {
 <body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
 
 
-<h1 style="color:white;"><b>LoL Coaching</b></h1>
+<marquee style="color:white;">LoL Coaching</marquee>
 <br>
 <p style="color:red;"><b>Summoner Name: EIcIco
   Region:North America
