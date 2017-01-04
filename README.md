@@ -20,7 +20,8 @@ div {
 <body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
 
 
-<marquee style="color:white;">LoL Coaching</marquee>
+<marquee behavior="scroll" direction="left"><img src="../jix/img_nat.png" width="120" height="80" alt="Natural" /></marquee>
+<p><a href="http://www.way2tutorial.com/html/html_marquee_image.php">Marquee Image</a></p>
 <br>
 <p style="color:red;"><b>Summoner Name: EIcIco
   Region:North America
