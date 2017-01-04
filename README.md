@@ -28,11 +28,6 @@ div {
   Region:North America
   Elo:Plat 1.</b></p>
 
-
-<embed src="https://www.youtube.com/watch?v=8limErMBoB4" loop="true" autostart="true"
-controls="smallconsole">
-
-
 <table style="width:100%">
   <tr>
   <td><img src="http://s.lolstatic.com/site/ekko-comic/f4c70d670bccb225431148424fc4900fc49da818/issue/01/pages/en_US/12/12_1.jpg" width="400" height="120"></td>
@@ -62,6 +57,8 @@ you.</p>
     <td></td>
   </tr>
  
+<embed src="<iframe width="854" height="480" src="https://www.youtube.com/embed/8limErMBoB4" frameborder="0" allowfullscreen></iframe>" loop="true" autostart="true"
+controls="smallconsole">
  
   <footer>
   <p style="color:white;">Posted by: Melvin Tran</p>
