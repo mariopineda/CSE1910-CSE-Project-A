@@ -28,10 +28,7 @@ div {
   Region:North America
   Elo:Plat 1.</b></p>
 
-<!-- SCM Music Player http://scmplayer.net -->
-<script type="text/javascript" src="http://scmplayer.net/script.js" 
-data-config="{'skin':'skins/tunes/skin.css','volume':25,'autoplay':false,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Hellberg,The Girl','url':'https://www.youtube.com/watch?v=FtveSk1N7Uo'},{'title':'Illenium Spirals','url':'https://www.youtube.com/watch?v=28kdYNZjS-A&t=168s'},{'title':'Where we are (Ti Mo Bootleg mix)','url':'https://www.youtube.com/watch?v=XvplQnojW-I'},{'title':'Sniper','url':'https://www.youtube.com/watch?v=5mTsrfkJaLw'},{'title':'Samurai','url':'https://www.youtube.com/watch?v=q1RYnkstHBY'},{'title':'Monody (Last Heroes x Mynerva Remix)','url':'https://www.youtube.com/watch?v=EYTuq4K49BI'},{'title':'Remember','url':'https://www.youtube.com/watch?v=pP0kPAbTIys'}]}" ></script>
-<!-- SCM Music Player script end -->
+
 
 
 
