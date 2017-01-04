@@ -63,11 +63,12 @@ you.</p>
     <td></td> 
     <td></td>
   </tr>
-  
+  </table>
+  </body>
  
   <footer>
   <p style="color:white;">Posted by: Melvin Tran</p>
   <p style="color:white;">Contact information: <a href="bobthebilbo@gmail.com">
    bobthebilbo@gmail.com</a>.</p>
 </footer>
-  
+</html>
