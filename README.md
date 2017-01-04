@@ -10,7 +10,11 @@ div {
     padding-bottom: 50px;
     padding-left: 100px;
 }
-
+div2 {
+     border: 1px solid black;
+     background-color: lightgrey;
+     padding: 50px 50px 50px 50px;
+     }
 </style>
 </Head>
 
