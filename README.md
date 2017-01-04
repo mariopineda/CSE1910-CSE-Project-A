@@ -12,7 +12,7 @@ div {
 }
 div2 {
 border: 100px solid black;
-margin-bottom: 100px;
+
 }
 </style>
 </Head>
