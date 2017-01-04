@@ -10,11 +10,7 @@ div {
     padding-bottom: 50px;
     padding-left: 100px;
 }
-div2 {
-     border: 1px solid black;
-     background-color: lightgrey;
-     padding: 100px 50px 100px 50px;
-     }
+
 </style>
 </Head>
 
@@ -24,11 +20,11 @@ div2 {
 <body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
 
 
-<div2><h1><b>LoL Coaching</b></h1>
+><h1><b>LoL Coaching</b></h1>
 <br>
 <p style="color:red;"><b>Summoner Name: EIcIco
   Region:North America
-  Elo:Plat 1.</b></p></div2>
+  Elo:Plat 1.</b></p>
 
 <table style="width:100%">
   <tr>
