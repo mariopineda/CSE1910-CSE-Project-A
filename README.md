@@ -44,7 +44,8 @@ you.</p>
     <li><a href="Late Game.html">Late game</a></li>
   </ul>
   </nav></td>
-    <td><embed src="[dBu Music] DESIRE DRIVERS.mp3" autostart="true"></td> 
+    <td><audio controls>
+  <source src="[dBu Music] DESIRE DRIVERS.mp3" type="audio/mpeg"></audio></td> 
     <td></td>
   </tr>
   <tr>
