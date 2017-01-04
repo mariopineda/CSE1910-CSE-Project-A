@@ -1,6 +1,21 @@
 <DOCTYPE html>
 <html>
 <Head>
+<script type="text/javascript">
+ 	$(document).ready(function(){
+      	$('#test-area').mouseout(function(){
+           	$('#mycursor').hide();
+           	return >false;
+      	});
+      	$('#test-area').mouseenter(function(){
+           	$('#mycursor').show();
+           	return >false;
+      	});
+      	$('#test-area').mousemove(function(e){
+           	$('#mycursor').css('left', e.clientX - 20).css('top', e.clientY + 7);
+      	});
+});
+</script>
 <style>
 div {
     border: 1px solid black;
@@ -10,8 +25,29 @@ div {
     padding-bottom: 50px;
     padding-left: 100px;
 }
-
+#test-area {
+ 	height: 200px;
+ 	border: 3px dashed #CCCCCC;
+ 	background: #FFFFFF;
+ 	padding: 20px;
+ 	cursor: url(./blank.cur), none;
+}
+#mycursor {
+ 	cursor: none;
+ 	width: 97px;
+ 	height: 137px;
+ 	background: url("images/custom-cursor.jpg") no-repeat left top;
+ 	position: absolute;
+ 	display: none;
+ 	top: 0;
+ 	left: 0;
+ 	z-index: 10000;
+}
 </style>
+<div id="test-area">
+     Move mouse over this area.
+</div>
+<div id="mycursor"></div>
 </Head>
 
 <title>LoL Coaching</title>
