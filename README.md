@@ -12,10 +12,10 @@ div {
 }
 div2 {
 border: 1px solid black;
-margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 80px;
+padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 100px;
 }
 </style>
 </Head>
