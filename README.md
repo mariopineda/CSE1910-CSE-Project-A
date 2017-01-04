@@ -10,13 +10,7 @@ div {
     padding-bottom: 50px;
     padding-left: 100px;
 }
-div2 {
-border: 1px solid black;
-padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-}
+
 </style>
 </Head>
 
