@@ -44,7 +44,7 @@ div {
  	z-index: 10000;
 }
 </style>
-<div id="mycursor"></div>
+
 </Head>
 
 <title>LoL Coaching</title>
