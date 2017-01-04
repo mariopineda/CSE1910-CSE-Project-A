@@ -66,15 +66,8 @@ you.</p>
 </th> 
   
   <tr>
-  <td><p>Click on these links below to be redirected to the other parts of this website.</p><nav>
-  <ul>
-    <li><a href="https://melvin-tran-cs.github.io/Reference-Links/">Reference Links</a></li>
-    <li><a href="https://melvin-tran-cs.github.io/Itemization/">Itemization/Decision Making</a></li>
-    <li><a href="Strategies and Laning Phase.html">Strategies/Laning Phase</a></li>
-    <li><a href="Gamer's Mindset.html">Gamer's Mindset</a></li>
-    <li><a href="Late Game.html">Late game</a></li>
-  </ul>
-  </nav></td>
+  <td><p>Click on these links below to be redirected to the other parts of this website.</p>
+  </td>
   <td><p><b>click the play button below to get really hyped for learning :D</b></p><audio controls>
   <source src="[dBu Music] DESIRE DRIVERS.mp3" type="audio/mpeg"></audio></td> 
     <td></td>
