@@ -19,6 +19,11 @@ div {
 
 <body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
 
+<!-- SCM Music Player http://scmplayer.net -->
+<script type="text/javascript" src="http://scmplayer.net/script.js" 
+data-config="{'skin':'skins/black/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Hellberg,The Girl','url':'https://www.youtube.com/watch?v=FtveSk1N7Uo'},{'title':'Illenium Spirals','url':'https://www.youtube.com/watch?v=28kdYNZjS-A&t=168s'},{'title':'Where we are (Ti Mo Bootleg mix)','url':'https://www.youtube.com/watch?v=XvplQnojW-I'},{'title':'Sniper','url':'https://www.youtube.com/watch?v=5mTsrfkJaLw'},{'title':'Samurai','url':'https://www.youtube.com/watch?v=q1RYnkstHBY'},{'title':'Monody (Last Heroes x Mynerva Remix)','url':'https://www.youtube.com/watch?v=EYTuq4K49BI'},{'title':'Remember','url':'https://www.youtube.com/watch?v=pP0kPAbTIys'}]}" ></script>
+<!-- SCM Music Player script end -->
+
 
 <marquee behavior="scroll" direction="left"><img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/15873532_1635479153424218_2877884122929684993_n.jpg?oh=ec7eba5e576a371353a853c88d87d363&oe=58EB7B1D" width="120" height="80" alt="Natural" /></marquee>
 <br>
