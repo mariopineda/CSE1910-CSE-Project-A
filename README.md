@@ -44,7 +44,7 @@ you.</p>
     <li><a href="Late Game.html">Late game</a></li>
   </ul>
   </nav></td>
-    <td><audio controls>
+  <td><p><b>click the play button below to get really hyped for learning :D</b></p><audio controls>
   <source src="[dBu Music] DESIRE DRIVERS.mp3" type="audio/mpeg"></audio></td> 
     <td></td>
   </tr>
