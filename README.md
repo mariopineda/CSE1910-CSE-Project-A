@@ -1,6 +1,7 @@
 <DOCTYPE html>
 <html>
 <Head>
+<div class="test">TEST</div>
 <style>
 div {
     border: 1px solid black;
@@ -10,7 +11,12 @@ div {
     padding-bottom: 50px;
     padding-left: 100px;
 }
-
+.test {
+  background:gray;
+  width:200px;
+  height:200px;
+  cursor:url('http://vignette3.wikia.nocookie.net/leagueoflegends/images/1/15/Infinity_Edge_item.png/revision/latest?cb=20130319090446');
+}
 </style>
 </Head>
 
