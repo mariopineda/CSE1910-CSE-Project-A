@@ -56,8 +56,7 @@ you.</p>
     <td></td>
   </tr>
  
-<embed src="<iframe width="854" height="480" src="https://www.youtube.com/embed/8limErMBoB4" frameborder="0" allowfullscreen></iframe>" loop="true" autostart="true"
-controls="smallconsole">
+
  
   <footer>
   <p style="color:white;">Posted by: Melvin Tran</p>
