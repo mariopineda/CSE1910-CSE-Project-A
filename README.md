@@ -27,7 +27,6 @@ div {
 <p style="color:red;"><b>Summoner Name: EIcIco
   Region:North America
   Elo:Plat 1.</b></p>
-
 <table style="width:100%">
   <tr>
   <td><img src="http://s.lolstatic.com/site/ekko-comic/f4c70d670bccb225431148424fc4900fc49da818/issue/01/pages/en_US/12/12_1.jpg" width="400" height="120"></td>
