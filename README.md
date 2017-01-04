@@ -11,7 +11,7 @@ div {
     padding-left: 100px;
 }
 div2 {
-border: 1px solid black;
+border: 100px solid black;
 margin-bottom: 100px;
 }
 </style>
