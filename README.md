@@ -29,7 +29,8 @@ div {
   Elo:Plat 1.</b></p>
 
 
-
+<embed src="https://www.youtube.com/watch?v=8limErMBoB4" loop="true" autostart="true"
+controls="smallconsole">
 
 
 <table style="width:100%">
