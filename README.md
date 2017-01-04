@@ -23,11 +23,11 @@ margin-bottom: 100px;
 <body background="http://5pots.com/img/upload/SR%20Wallpaper.jpg">
 
 
-<div2><h1><b>LoL Coaching</b></h1>
+<div2><h1><b>LoL Coaching</b></h1></div2>
 <br>
 <p style="color:red;"><b>Summoner Name: EIcIco
   Region:North America
-  Elo:Plat 1.</b></p></div2>
+  Elo:Plat 1.</b></p>
 
 <table style="width:100%">
   <tr>
