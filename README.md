@@ -51,10 +51,7 @@ you.</p>
     <li><a href="Late Game.html">Late game</a></li>
   </ul>
   </nav></td>
-    <td><FORM METHOD="link" 
-ACTION="URL HERE">
-<INPUT TYPE="submit"
-VALUE="Psst,click me to get some music to listen to while you look through here"></FORM></td> 
+    <td></td> 
     <td></td>
   </tr>
   <tr>
