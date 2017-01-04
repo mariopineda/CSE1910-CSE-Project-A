@@ -22,7 +22,7 @@ div {
 
 <h1><b>LoL Coaching</b></h1>
 <br>
-<p style="color:Yellow;"><b>Summoner Name: EIcIco
+<p style="color:red;"><b>Summoner Name: EIcIco
   Region:North America
   Elo:Plat 1.</b></p>
 
