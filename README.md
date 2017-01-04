@@ -44,9 +44,6 @@ div {
  	z-index: 10000;
 }
 </style>
-<div id="test-area">
-     Move mouse over this area.
-</div>
 <div id="mycursor"></div>
 </Head>
 
@@ -82,7 +79,10 @@ you.</p>
     <li><a href="Late Game.html">Late game</a></li>
   </ul>
   </nav></td>
-    <td></td> 
+    <td><div id="test-area">
+     If you move your mouse over here it gains shaco's q.
+</div>
+<div id="mycursor"></div></td> 
     <td></td>
   </tr>
   <tr>
