@@ -1,7 +1,6 @@
 <DOCTYPE html>
 <html>
 <Head>
-<div class="test">TEST</div>
 <style>
 div {
     border: 1px solid black;
