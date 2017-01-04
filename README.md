@@ -30,7 +30,7 @@ div {
  	border: 3px dashed #CCCCCC;
  	background: #FFFFFF;
  	padding: 20px;
- 	cursor: url(./blank.cur), none;
+ 	cursor: url("http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3078.png");
 }
 #mycursor {
  	cursor: none;
