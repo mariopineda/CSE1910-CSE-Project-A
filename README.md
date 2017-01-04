@@ -1,21 +1,6 @@
 <DOCTYPE html>
 <html>
 <Head>
-<script type="text/javascript">
- 	$(document).ready(function(){
-      	$('#test-area').mouseout(function(){
-           	$('#mycursor').hide();
-           	return >false;
-      	});
-      	$('#test-area').mouseenter(function(){
-           	$('#mycursor').show();
-           	return >false;
-      	});
-      	$('#test-area').mousemove(function(e){
-           	$('#mycursor').css('left', e.clientX - 20).css('top', e.clientY + 7);
-      	});
-});
-</script>
 <style>
 div {
     border: 1px solid black;
@@ -24,24 +9,6 @@ div {
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 100px;
-}
-#test-area {
- 	height: 200px;
- 	border: 3px dashed #CCCCCC;
- 	background: #FFFFFF;
- 	padding: 20px;
- 	cursor: url("http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3078.png");
-}
-#mycursor {
- 	cursor: none;
- 	width: 97px;
- 	height: 137px;
- 	background: url("images/custom-cursor.jpg") no-repeat left top;
- 	position: absolute;
- 	display: none;
- 	top: 0;
- 	left: 0;
- 	z-index: 10000;
 }
 </style>
 
@@ -79,10 +46,7 @@ you.</p>
     <li><a href="Late Game.html">Late game</a></li>
   </ul>
   </nav></td>
-    <td><div id="test-area">
-     If you move your mouse over here it gains shaco's q.
-</div>
-<div id="mycursor"></div></td> 
+    <td></td> 
     <td></td>
   </tr>
   <tr>
