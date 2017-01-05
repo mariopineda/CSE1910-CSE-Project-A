@@ -42,7 +42,6 @@ li a:hover {
     <li><a href="https://melvin-tran-cs.github.io/Itemization/">Itemization/Decision Making</a></li>
     <li><a href="https://melvin-tran-cs.github.io/Strategies-And-Laning-Phase/">Strategies/Laning Phase</a></li>
     <li><a href="https://melvin-tran-cs.github.io/Gamer-s-Mindset/">Gamer's Mindset</a></li>
-    <li><a href="Late Game.html">Late game</a></li>
   </ul>
   
 
