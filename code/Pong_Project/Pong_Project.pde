@@ -24,6 +24,8 @@ boolean upR, downR;//Variables for movement of right paddle with keyPressed/Rele
 int scoreL = 0;
 int scoreR = 0;
 
+int winScore = 2;
+
 void setup() {
   size(750,750);//Size of the canvas, subject to change
   
@@ -61,7 +63,7 @@ void draw() {
   padLRHit();//Call from void padLRHit
   
   scores();
-
+  gameOver();
 }
 
 void padLRDraw() {//Draw the paddles
@@ -142,6 +144,26 @@ void wallBounce() {//If and if else statements to bounce off wall
   else if( y < 0 + h/2) {
     speedY = -speedY;
   }
+}
+
+void gameOver() {
+  if(scoreL == winScore) {
+    gameOverPage("Player 1 Wins!"); 
+  }
+  
+  if(scoreR == winScore) {
+    gameOverPage("Player 2 Wins!");
+  }
+}
+
+void gameOverPage(String text) {
+  
+  speedX = 0;
+  speedY = 0;
+  
+  text("Game over", width/2, height/3 -40);
+  text(text, width/2, height/3);
+  text("Click to Play again", width/2, height/3 + 40);
 }
 
 void keyPressed() {//Set key commands for left and right paddle
