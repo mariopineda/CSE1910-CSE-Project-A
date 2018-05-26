@@ -31,8 +31,8 @@ void setup() {
   
   x = width/2;//List circle parameters
   y = height/2;
-  w = 50;
-  h = 50;
+  w = 25;
+  h = 25;
   speedX = 4;
   speedY = 3;
   
@@ -44,7 +44,7 @@ void setup() {
   padRY = height/2;
   
   padLW = 20;//paddle parameters
-  padLH = 75;
+  padLH = 50;//In these 3 cases padL represents both since they have the same size.
   padLS = 5;
   
   textSize(30);
