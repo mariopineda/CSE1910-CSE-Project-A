@@ -20,6 +20,10 @@ boolean upL, downL;//Variables for movement of left paddle with keyPressed/Relea
 
 int padRX, padRY;//Create integers for right paddle, known here as padR. Integers follow same order as above
 boolean upR, downR;//Variables for movement of right paddle with keyPressed/Released
+
+int scoreL = 0;
+int scoreR = 0;
+
 void setup() {
   size(750,750);//Size of the canvas, subject to change
   
@@ -27,7 +31,7 @@ void setup() {
   y = height/2;
   w = 50;
   h = 50;
-  speedX = 3;
+  speedX = 4;
   speedY = 3;
   
   rectMode(CENTER);
@@ -40,6 +44,8 @@ void setup() {
   padLW = 20;//paddle parameters
   padLH = 75;
   padLS = 5;
+  
+  textSize(30);
 }
 
 void draw() {
@@ -53,6 +59,8 @@ void draw() {
   padLRMove();//Call from void padLRMove
   padLRLimit();//Call from void padLRLimit
   padLRHit();//Call from void padLRHit
+  
+  scores();
 
 }
 
@@ -118,8 +126,8 @@ void circleMove() {//Make the circle move
 void wallBounce() {//If and if else statements to bounce off wall 
   
   if(x > width - w/2) {
-    speedX = -speedX;
     setup();//Resets to initial setup
+    speedX = -speedX;
   }
   else if ( x < 0 + w/2) {
     speedX = -speedX;
@@ -150,6 +158,12 @@ void keyPressed() {//Set key commands for left and right paddle
   if(keyCode == DOWN) {
     downR = true;
   }
+}
+
+void scores() {
+  fill(255);
+  text(scoreL, 100, 50);
+  text(scoreR, width-100, 50);
 }
 
 void keyReleased() {//For when the key is released, makes movement smoother
