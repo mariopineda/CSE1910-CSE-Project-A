@@ -10,9 +10,12 @@
 */
 
 void setup() {
-  size(500,500);
-  background(0);
+  size(500,500);//Size of canvas, subject to change
 }
 
 void draw() {
+  background(0);//Color of canvas
+  
+  fill(255,255,255);//Color of circle
+  ellipse(width/2, height/2, 50, 50);//Draw circle
 }
