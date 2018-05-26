@@ -51,8 +51,8 @@ void draw() {
   
   padLRDraw();//Call from void padLRDraw
   padLRMove();//Call from void padLRMove
-  padLLimit();
-  padLHit();
+  padLRLimit();
+  padLRHit();
 
 }
 
@@ -138,6 +138,13 @@ void keyPressed() {
   if(key == 's' || key == 'S') {
     downL = true;
   }
+  if(keyCode == UP) {
+    upR = true;
+  }
+  
+  if(keyCode == DOWN) {
+    downR = true;
+  }
 }
 
 void keyReleased() {
@@ -147,5 +154,12 @@ void keyReleased() {
   
   if(key == 's' || key == 'S') {
     downL = false;
+  }
+  if(keyCode == UP) {
+    upR = false;
+  }
+  
+  if(keyCode == DOWN) {
+    downR = false;
   }
 }
