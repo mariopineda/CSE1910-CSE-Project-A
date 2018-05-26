@@ -8,12 +8,14 @@
 *for my Computer Science 10 class.
 *It is also to experiment with making my first game.
 *
-*I will also experiment with alternative organization from my typical practices
-*so if the code looks different from my other projects then that's why.
+*I will also experiment with alternative organization practices from my typical projects
+*so if the code looks different from then that's why.
 */
 
 int x, y, w, h, speedX, speedY;//Create integers for circle parameters
 //I put all the integers on the same line instead of a list to save on memory.
+
+int padLX, padLY, padLW, padLH, padLS;//Create integers for left paddle, known here as padL. Integers follow same order as above
 
 void setup() {
   size(750,750);//Size of the canvas, subject to change
@@ -24,6 +26,13 @@ void setup() {
   h = 50;
   speedX = 2;
   speedY = 1;
+  
+  rectMode(CENTER);
+  padLX = 50;
+  padLY = height/2;
+  padLW = 20;
+  padLH = 75;
+  padLS = 5;
 }
 
 void draw() {
@@ -34,6 +43,14 @@ void draw() {
   circleMove();//Call from void circleMove
   
   wallBounce();//Call from void wallBounce
+  
+  padLDraw();//Call from void padLDraw
+
+}
+
+void padLDraw() {
+  fill(255);
+  rect(padLX, padLY, padLW, padLH);
 
 }
 
