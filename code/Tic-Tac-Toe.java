@@ -84,7 +84,7 @@ public static int checkGameStatus(int[][] board){
 public static boolean isFormLine(int[][] board, int number){
  boolean lineFormed;
 
-//Check rows of the board for a line of 1 (denotes X) or 2(denotes O)
+ //Check rows of the board for a line of 1 (denotes X) or 2(denotes O)
 
  for (int i = 0; i < board.length; i++){
      lineFormed = true;
@@ -93,6 +93,16 @@ public static boolean isFormLine(int[][] board, int number){
           lineFormed = false;
      if (lineFormed)
         return true;//Horizontal line formed
+ }
+
+ //Check columns
+ for (int j = 0; j < board[0].length; j++){
+     lineFormed = true;
+     for (int i = 1; i < board.length; i++)
+       if (board[i - 1][j] != number || board[i][j] != number)
+          lineFormed = false;
+     if (lineFormed)
+        return true;
  }
 
  
