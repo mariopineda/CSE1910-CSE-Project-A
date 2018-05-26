@@ -12,7 +12,9 @@
 int x;//Create integers for circle parameters
 int y;
 int w;
-int h;
+int h;//The reason for this is so that it is easier to make move later.
+
+int speed;//Speed of moving ball
 
 void setup() {
   size(500,500);//Size of canvas, subject to change
@@ -21,6 +23,7 @@ void setup() {
   y = height/2;
   w = 50;
   h = 50;
+  speed = 1;
   
 }
 
@@ -30,5 +33,11 @@ void draw() {
   fill(255,255,255);//Color of circle
   ellipse(x, y, w, h);//Draw circle
   
-  
+  if(x > width) {
+    speed = -speed;
+  }
+  else if ( x < 0) {
+    speed = -speed;
+  }
+  x = x + speed;
 }
