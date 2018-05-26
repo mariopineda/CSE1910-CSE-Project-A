@@ -105,4 +105,12 @@ public static boolean isFormLine(int[][] board, int number){
         return true;
  }
 
+ //Check major diagonal
+ lineFormed = true;
+ for (int i = 1; i < board.length; i++){
+     if (board[i - 1][i - 1] != number || board[i][i] != number)
+          lineFormed = false;
+ if (lineFormed)
+    return true;
+
  
