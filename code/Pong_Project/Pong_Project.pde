@@ -16,10 +16,10 @@ int x, y, w, h, speedX, speedY;//Create integers for circle parameters
 //I put all the integers on the same line instead of a list to save on memory.
 
 int padLX, padLY, padLW, padLH, padLS;//Create integers for left paddle, known here as padL. Integers follow same order as above
-boolean upL, downL;
+boolean upL, downL;//Variables for movement of left paddle with keyPressed/Released
 
 int padRX, padRY;//Create integers for right paddle, known here as padR. Integers follow same order as above
-boolean upR, downR;
+boolean upR, downR;//Variables for movement of right paddle with keyPressed/Released
 void setup() {
   size(750,750);//Size of the canvas, subject to change
   
@@ -51,19 +51,18 @@ void draw() {
   
   padLRDraw();//Call from void padLRDraw
   padLRMove();//Call from void padLRMove
-  padLRLimit();
-  padLRHit();
+  padLRLimit();//Call from void padLRLimit
+  padLRHit();//Call from void padLRHit
 
 }
 
-void padLRDraw() {
+void padLRDraw() {//Draw the paddles
   fill(255);
   rect(padLX, padLY, padLW, padLH);
   rect(padRX, padRY, padLW, padLH);
-
 }
 
-void padLRMove () {
+void padLRMove () {//Move the paddles with corresponding keys listed in void keyPressed & keyReleased
   if(upL == true) {
     padLY = padLY - padLS;
   }
@@ -78,7 +77,7 @@ void padLRMove () {
   }
 }
 
-void padLRLimit() {
+void padLRLimit() {//Set window limit so paddles dont move off screen
   if(padLY - padLH/2 < 0) {
     padLY = padLY + padLS;
   }
@@ -93,7 +92,7 @@ void padLRLimit() {
   }
 }
 
-void padLRHit(){
+void padLRHit(){//Set rules for if the ball hits the paddles
   if(x - w/2 < padLX + padLW/2 && y - h/2 < padLY + padLH/2 && y + h/2 > padLY - padLH/2) {
     speedX = -speedX;
   }
@@ -130,7 +129,7 @@ void wallBounce() {//If and if else statements to bounce off wall
   }
 }
 
-void keyPressed() {
+void keyPressed() {//Set key commands for left and right paddle
   if(key == 'w' || key == 'W') {
     upL = true;
   }
@@ -147,7 +146,7 @@ void keyPressed() {
   }
 }
 
-void keyReleased() {
+void keyReleased() {//For when the key is released, makes movement smoother
   if(key == 'w' || key == 'W') {
     upL = false;
   }
