@@ -24,7 +24,7 @@ boolean upR, downR;//Variables for movement of right paddle with keyPressed/Rele
 int scoreL = 0;
 int scoreR = 0;
 
-int winScore = 2;
+int winScore = 5;
 
 void setup() {
   size(750,750);//Size of the canvas, subject to change
