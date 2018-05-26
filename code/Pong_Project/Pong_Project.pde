@@ -48,6 +48,7 @@ void setup() {
   padLS = 5;
   
   textSize(30);
+  textAlign(CENTER, CENTER);
 }
 
 void draw() {
@@ -164,6 +165,13 @@ void gameOverPage(String text) {
   text("Game over", width/2, height/3 -40);
   text(text, width/2, height/3);
   text("Click to Play again", width/2, height/3 + 40);
+  
+  if(mousePressed) {
+    scoreR = 0;
+    scoreL = 0;
+    speedX = 4;
+    speedY = 3;
+  }
 }
 
 void keyPressed() {//Set key commands for left and right paddle
