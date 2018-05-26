@@ -97,6 +97,9 @@ void padLRHit(){
   if(x - w/2 < padLX + padLW/2 && y - h/2 < padLY + padLH/2 && y + h/2 > padLY - padLH/2) {
     speedX = -speedX;
   }
+  else if(x + w/2 > padRX - padLW/2 && y - h/2 < padRY + padLH/2 && y + h/2 > padRY - padLH/2) {
+    speedX = -speedX;
+  }
 }
 
 void circleDraw() {//Draw the circle
