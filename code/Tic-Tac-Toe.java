@@ -79,4 +79,20 @@ public static int checkGameStatus(int[][] board){
  return 0;//Game continues
 }
 
+/** Checks whether digit in number parameter forms
+* horizontal/vertical/diagonal line */
+public static boolean isFormLine(int[][] board, int number){
+ boolean lineFormed;
 
+//Check rows of the board for a line of 1 (denotes X) or 2(denotes O)
+
+ for (int i = 0; i < board.length; i++){
+     lineFormed = true;
+     for (int j = 0; j < board[i].length; j++)
+       if (board[i][j - 1] != number || board[i][j] != number)
+          lineFormed = false;
+     if (lineFormed)
+        return true;//Horizontal line formed
+ }
+
+ 
