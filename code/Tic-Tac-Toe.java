@@ -45,3 +45,26 @@ public class Tic-Tac-Toe
   //In case nobody has won after 9 turns
   System.out.println("It's a draw");
  }
+
+/**Visualize game board*/
+public static void drawBoard(int[] board){
+ for (int[] row : board){
+  for (int cell : row)
+   switch (cell) {
+    case 0:
+     System.out.print("| ");
+     break;
+    case 1:
+     System.out.print("|X");
+     break;
+    case 2:
+     System.out.print("|O");
+     break;
+   default:
+     System.out.println("Wrong element on board");
+     System.exit(1);
+  }
+  System.out.println("|");
+ }
+}
+
