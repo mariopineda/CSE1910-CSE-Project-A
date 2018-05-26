@@ -16,7 +16,7 @@ int x, y, w, h, speedX, speedY;//Create integers for circle parameters
 //I put all the integers on the same line instead of a list to save on memory.
 
 int padLX, padLY, padLW, padLH, padLS;//Create integers for left paddle, known here as padL. Integers follow same order as above
-boolean up, down;
+boolean upL, downL;
 
 void setup() {
   size(750,750);//Size of the canvas, subject to change
@@ -25,8 +25,8 @@ void setup() {
   y = height/2;
   w = 50;
   h = 50;
-  speedX = 2;
-  speedY = 1;
+  speedX = 3;
+  speedY = 3;
   
   rectMode(CENTER);
   padLX = 50;
@@ -46,6 +46,7 @@ void draw() {
   padLDraw();//Call from void padLDraw
   padLMove();//Call from void padLMove
   padLLimit();
+  padLHit();
 
 }
 
@@ -70,6 +71,12 @@ void padLLimit() {
   }
   if(padLY + padLH/2 > height) {
     padLY = padLY - padLS;
+  }
+}
+
+void padLHit(){
+  if(x - w/2 < padLX + padLW/2 && y - h/2 < padLY + padLH/2 && y + h/2 > padLY - padLH/2) {
+    speedX = -speedX;
   }
 }
 
@@ -113,10 +120,10 @@ void keyPressed() {
 
 void keyReleased() {
   if(key == 'w' || key == 'W') {
-    up = false;
+    upL = false;
   }
   
   if(key == 's' || key == 'S') {
-    down = false;
+    downL = false;
   }
 }
