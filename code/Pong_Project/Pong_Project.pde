@@ -110,11 +110,11 @@ void wallBounce() {//If and if else statements to bounce off wall
 
 void keyPressed() {
   if(key == 'w' || key == 'W') {
-    up = true;
+    upL = true;
   }
   
   if(key == 's' || key == 'S') {
-    down = true;
+    downL = true;
   }
 }
 
