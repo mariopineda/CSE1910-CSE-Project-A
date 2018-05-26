@@ -14,15 +14,11 @@ For a proposal to be successful it needs to get a mark of at least 50%. Unsucces
 
 | Concerns (_Areas that need work_) | Criteria (_Criteria for proficiency_) | Advanced (_Evidence of exceeding proficiency_) |
 | ---| --- | --- |
-| X | The proposal is complete and contains all the necessary details | |
-| X | It is clear from the proposal that the necessary background research has been done and that the appropriate tools, techniques and challenges have been identified | |
+|  | The proposal is complete and contains all the necessary details | X |
+|  | It is clear from the proposal that the necessary background research has been done and that the appropriate tools, techniques and challenges have been identified | X |
 | | Appropriate Markdown syntax is used | X |
-| X | Required supplementary material is included | |
+|  | Required supplementary material is included | X |
 | | Complete sentences/paragraphs and correct English spelling, grammar and punctuation is used | X |
 
-The proposal needs more details and 
-
-It is not clear how the user will be mix the ingredients (provide an example of user dialogue as supplementary material). it is not clear how the drink information/data will be stored in a text file (what format, structure will the text file have). Provide an example of a text file as supplementary material.
-
-7/10
+10/10
 
