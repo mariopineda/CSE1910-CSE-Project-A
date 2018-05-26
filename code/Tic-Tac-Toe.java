@@ -68,3 +68,15 @@ public static void drawBoard(int[] board){
  }
 }
 
+/** Check whether current board state corresponds to the win of one
+*of the players */
+public static int checkGameStatus(int[][] board){
+ if (isFormLine(board, 1))
+    return 1;//Player X won
+ if (isFormLine(board, 2))
+    return 2;//Player O won
+
+ return 0;//Game continues
+}
+
+
