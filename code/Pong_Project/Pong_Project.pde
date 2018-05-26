@@ -40,14 +40,12 @@ void draw() {
   background(0);//Color of canvas
   
   circleDraw();//Call from void circleDraw
- 
   circleMove();//Call from void circleMove
-  
   wallBounce();//Call from void wallBounce
   
   padLDraw();//Call from void padLDraw
-  
   padLMove();//Call from void padLMove
+  padLLimit();
 
 }
 
@@ -63,6 +61,15 @@ void padLMove () {
   }
   if(down == true) {
     padLY = padLY + padLS;
+  }
+}
+
+void padLLimit() {
+  if(padLY - padLH/2 < 0) {
+    padLY = padLY + padLS;
+  }
+  if(padLY + padLH/2 > height) {
+    padLY = padLY - padLS;
   }
 }
 
