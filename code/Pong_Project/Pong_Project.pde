@@ -31,13 +31,13 @@ void setup() {
   speedY = 3;
   
   rectMode(CENTER);
-  padLX = 50;
+  padLX = 50;//Left paddle coordinates
   padLY = height/2;
   
-  padRX = width-50;
+  padRX = width-50;//Right paddle coordinates
   padRY = height/2;
   
-  padLW = 20;
+  padLW = 20;//paddle parameters
   padLH = 75;
   padLS = 5;
 }
@@ -50,7 +50,7 @@ void draw() {
   wallBounce();//Call from void wallBounce
   
   padLRDraw();//Call from void padLRDraw
-  padLMove();//Call from void padLMove
+  padLRMove();//Call from void padLRMove
   padLLimit();
   padLHit();
 
@@ -63,25 +63,37 @@ void padLRDraw() {
 
 }
 
-void padLMove () {
+void padLRMove () {
   if(upL == true) {
     padLY = padLY - padLS;
   }
   if(downL == true) {
     padLY = padLY + padLS;
   }
+  if(upR == true) {
+    padRY = padRY - padLS;
+  }
+  if(downR == true) {
+    padRY = padRY + padLS;
+  }
 }
 
-void padLLimit() {
+void padLRLimit() {
   if(padLY - padLH/2 < 0) {
     padLY = padLY + padLS;
   }
   if(padLY + padLH/2 > height) {
     padLY = padLY - padLS;
   }
+  if(padRY - padLH/2 < 0) {
+    padRY = padRY + padLS;
+  }
+  if(padRY + padLH/2 > height) {
+    padRY = padRY - padLS;
+  }
 }
 
-void padLHit(){
+void padLRHit(){
   if(x - w/2 < padLX + padLW/2 && y - h/2 < padLY + padLH/2 && y + h/2 > padLY - padLH/2) {
     speedX = -speedX;
   }
