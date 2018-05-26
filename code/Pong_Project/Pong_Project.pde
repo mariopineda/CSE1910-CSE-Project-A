@@ -21,10 +21,10 @@ boolean upL, downL;//Variables for movement of left paddle with keyPressed/Relea
 int padRX, padRY;//Create integers for right paddle, known here as padR. Integers follow same order as above
 boolean upR, downR;//Variables for movement of right paddle with keyPressed/Released
 
-int scoreL = 0;
-int scoreR = 0;
+int scoreL = 0;//Integer for score for left paddle
+int scoreR = 0;//Integer for score for right paddle
 
-int winScore = 5;
+int winScore = 3;//Integer for which the game will end at certain score, subject to change.
 
 void setup() {
   size(750,750);//Size of the canvas, subject to change
@@ -63,8 +63,8 @@ void draw() {
   padLRLimit();//Call from void padLRLimit
   padLRHit();//Call from void padLRHit
   
-  scores();
-  gameOver();
+  scores();//Call from void scores
+  gameOver();//call from void gameOver
 }
 
 void padLRDraw() {//Draw the paddles
@@ -147,7 +147,7 @@ void wallBounce() {//If and if else statements to bounce off wall
   }
 }
 
-void gameOver() {
+void gameOver() {//Displays written text once either player reaches score limit
   if(scoreL == winScore) {
     gameOverPage("Player 1 Wins!"); 
   }
@@ -157,16 +157,16 @@ void gameOver() {
   }
 }
 
-void gameOverPage(String text) {
+void gameOverPage(String text) {//The page that displays when maximum score is reached. 
   
-  speedX = 0;
+  speedX = 0;//Ball stops
   speedY = 0;
   
   text("Game over", width/2, height/3 -40);
   text(text, width/2, height/3);
-  text("Click to Play again", width/2, height/3 + 40);
+  text("Click to Play again", width/2, height/3 + 40);//Displays text once score limit is reached
   
-  if(mousePressed) {
+  if(mousePressed) {//Mouse press resets game once you see game over screen
     scoreR = 0;
     scoreL = 0;
     speedX = 4;
@@ -191,7 +191,7 @@ void keyPressed() {//Set key commands for left and right paddle
   }
 }
 
-void scores() {
+void scores() {//Display the  score of each player
   fill(255);
   text(scoreL, 100, 50);
   text(scoreR, width-100, 50);
