@@ -47,7 +47,7 @@ void setup() {
   padLH = 50;//In these 3 cases padL represents both since they have the same size.
   padLS = 5;
   
-  textSize(30);
+  textSize(30);//Text size and alignment for the points of each player
   textAlign(CENTER, CENTER);
 }
 
