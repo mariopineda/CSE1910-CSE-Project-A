@@ -18,7 +18,7 @@ int x, y, w, h, speedX, speedY;//Create integers for circle parameters
 int padLX, padLY, padLW, padLH, padLS;//Create integers for left paddle, known here as padL. Integers follow same order as above
 boolean upL, downL;
 
-int padRX, padRY, padRW, padRH, padRS;//Create integers for right paddle, known here as padR. Integers follow same order as above
+int padRX, padRY;//Create integers for right paddle, known here as padR. Integers follow same order as above
 boolean upR, downR;
 void setup() {
   size(750,750);//Size of the canvas, subject to change
@@ -33,6 +33,10 @@ void setup() {
   rectMode(CENTER);
   padLX = 50;
   padLY = height/2;
+  
+  padRX = width-50;
+  padRY = height/2;
+  
   padLW = 20;
   padLH = 75;
   padLS = 5;
@@ -45,16 +49,17 @@ void draw() {
   circleMove();//Call from void circleMove
   wallBounce();//Call from void wallBounce
   
-  padLDraw();//Call from void padLDraw
+  padLRDraw();//Call from void padLRDraw
   padLMove();//Call from void padLMove
   padLLimit();
   padLHit();
 
 }
 
-void padLDraw() {
+void padLRDraw() {
   fill(255);
   rect(padLX, padLY, padLW, padLH);
+  rect(padRX, padRY, padLW, padLH);
 
 }
 
