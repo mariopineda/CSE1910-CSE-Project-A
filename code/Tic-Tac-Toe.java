@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Tic-Tac-Toe
 {
- public static void main(String args[])
- {
+ public static void main(String args[]){
   Scanner input = new Scanner(System.in);
   int[][] board = {
        {0,0,0},
@@ -29,3 +28,20 @@ public class Tic-Tac-Toe
      break;
    }
 
+  board[row][column] = (i % 2 == 0) ? 1 : 2;
+  drawBoard(board);
+
+  //Check whether one of the players won at the end of the turn
+  switch (checkGameStatus(board)){
+   case 1:
+    System.out.println("X player won");
+    return;//Ends Game
+   case 2:
+    System.out.println("O player won");
+    return;//Ends Game
+   }
+  }
+
+  //In case nobody has won after 9 turns
+  System.out.println("It's a draw");
+ }
