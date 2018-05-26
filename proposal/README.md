@@ -14,9 +14,12 @@ For a proposal to be successful it needs to get a mark of at least 50%. Unsucces
 
 | Concerns (_Areas that need work_) | Criteria (_Criteria for proficiency_) | Advanced (_Evidence of exceeding proficiency_) |
 | ---| --- | --- |
-| | The proposal is complete and contains all the necessary details | |
-| | It is clear from the proposal that the necessary background research has been done and that the appropriate tools, techniques and challenges have been identified | |
-| | Appropriate Markdown syntax is used | |
-| | Required supplementary material is included | |
-| | Complete sentences/paragraphs and correct English spelling, grammar and punctuation is used | |
+| X | The proposal is complete and contains all the necessary details | |
+| X | It is clear from the proposal that the necessary background research has been done and that the appropriate tools, techniques and challenges have been identified | |
+| | Appropriate Markdown syntax is used | X |
+| X | Required supplementary material is included | |
+| | Complete sentences/paragraphs and correct English spelling, grammar and punctuation is used | X |
 
+The proposal needs to me more detailed and provide information about game mechanics (for example, how will the user interact with the computer during the game, etc.) and the AI algorithm. For the proposal you need to have done the research on the AI algorithm and have identified a suitable one.
+
+7/10
