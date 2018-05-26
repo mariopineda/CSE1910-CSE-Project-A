@@ -94,10 +94,14 @@ void padLRLimit() {//Set window limit so paddles dont move off screen
 
 void padLRHit(){//Set rules for if the ball hits the paddles
   if(x - w/2 < padLX + padLW/2 && y - h/2 < padLY + padLH/2 && y + h/2 > padLY - padLH/2) {
-    speedX = -speedX;
+    if(speedX < 0) {//Fixes glitch if the ball hit under or above the paddle
+    speedX = -speedX;//Left paddle collision
+    }
   }
   else if(x + w/2 > padRX - padLW/2 && y - h/2 < padRY + padLH/2 && y + h/2 > padRY - padLH/2) {
-    speedX = -speedX;
+    if(speedX > 0) {//Fixes glitch if the ball hit under or above the paddle
+    speedX = -speedX;//Right paddle collision
+    }
   }
 }
 
@@ -115,9 +119,11 @@ void wallBounce() {//If and if else statements to bounce off wall
   
   if(x > width - w/2) {
     speedX = -speedX;
+    setup();//Resets to initial setup
   }
   else if ( x < 0 + w/2) {
     speedX = -speedX;
+    setup();//Resets to initial setup
   }
   
   if( y > height - h/2) {
