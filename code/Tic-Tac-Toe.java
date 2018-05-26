@@ -113,4 +113,15 @@ public static boolean isFormLine(int[][] board, int number){
  if (lineFormed)
     return true;
 
- 
+ //Check minor diagonal
+ lineFormed = true;
+ for (int i = 1; i < board.length; i++)
+     if (board[board.length - i][i - 1] != number ||
+           board[board.length - i - 1][i] != number)
+         lineFormed = false;
+ if (lineFormed)
+     return true;
+
+ return false;//If none of the lines is formed
+ }
+} 
