@@ -128,10 +128,11 @@ void wallBounce() {//If and if else statements to bounce off wall
   if(x > width - w/2) {
     setup();//Resets to initial setup
     speedX = -speedX;
+    scoreL = scoreL + 1;
   }
   else if ( x < 0 + w/2) {
-    speedX = -speedX;
     setup();//Resets to initial setup
+    scoreR = scoreR + 1;
   }
   
   if( y > height - h/2) {
