@@ -70,22 +70,24 @@ void draw() {
   
   scores();//Call from void scores
   gameOver();//call from void gameOver
-  splashPage();//call from void splashPage 
+  if(dPaddles == false) {//Stops bug where splash page would loop when scores are 0
+    splashPage();//call from void splashPage
+  }
 }
 
 void padLRDraw() {//Draw the paddles
   fill(255);
   rect(padLX, padLY, padLW, padLH);
   rect(padRX, padRY, padLW, padLH);
-  if(dPaddles) { 
-    if(millis() - timer > 15000) {
+  if(dPaddles) { //boolean variable to stop timer from having effect at splash screen
+    if(millis() - timer > 15000) {//At 15 seconds into the round the paddles turn black
       fill(0);
       strokeWeight(.1);
       stroke(255);
       rect(padLX, padLY, padLW, padLH);
       rect(padRX, padRY, padLW, padLH);
     }
-    if(millis() - timer > 25000) {
+    if(millis() - timer > 25000) {//At 25 seconds the paddles turn white
       fill(255);
       strokeWeight(0);
       stroke(0);
@@ -203,15 +205,22 @@ void splashPage() {//Page that displays at the beginning of program
   
     speedX = 0;//Ball pauses until mouse is pressed
     speedY = 0;
-  
-    text("Welcome to Pong", width/2, height/6);//Text that displays during splash page
+    
+    fill(255);
+    text(scoreL, 100, 50);
+    text(scoreR, width-100, 50);
+    textSize(15);
+    textAlign(CENTER, CENTER);
+    
+    text("Welcome to Pong!", width/2, height/6);//Text that displays during splash page
     text("This side is player 1", width/4, height/4);
     text("This side is player 2", 575, height/4);
     text("Player 1 uses S and W to move the paddle", width/4, height/4 + 40);
     text("Player 2 uses the UP and DOWN arrows", 575, height/4 + 40);
-    text("Click the mouse to play", width/2, height/2.5);
+    text("Click the mouse to play!", width/2, height/2.5);
+    text("There are some changes to this game, watch out!", width/2, height/2.8);
     
-    textSize(15);
+    textSize(30);
   }
   
   if(mousePressed) {//Game starts when mouse is pressed and points are set to 0 to start the game.
