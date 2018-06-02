@@ -9,3 +9,18 @@ I learned that Java does not have a function to add an item to an array. Memory 
 My goal for next week is to finish writing the recipe book, drink descriptions and allow the program to detect which drink is being made.
 ## What are the main challenges you are facing next week?
 In order to detect which drink is being made, a line of a text must be converted to a string, and then from there that string must divide each word into a double value. After t hat, it can compare the user inputs with the possible outcomes.
+
+# Marking Rubric
+
+| Concerns (_Areas that need work_) | Criteria (_Criteria for proficiency_) | Advanced (_Evidence of exceeding proficiency_) |
+| ---                               | ---                                   | ---                                            |
+| | Log and commit message show evidence of progress and that class time has been used efficiently | X | 
+| | X All required questions have been answered with sufficient detail | |
+| | Log messages are accurate and constent with commit history | X |
+| | Appropriate Markdown syntax is used | X |
+| | Complete sentences/paragraphs and correct English spelling, grammar and punctuation is used | X |
+
+14/15 (94%)
+
+Comments: The weekly logs need to include more details and specifics (at least two paragraphs per questions)
+
