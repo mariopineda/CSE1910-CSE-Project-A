@@ -69,7 +69,7 @@ public class Bartender
 		lr4.close();
 		BufferedReader zr = new BufferedReader(new FileReader("drinks.txt"));
 		String[] drinks = new String[zLines];
-		for (int i = 0; i < iLines; i++) drinks[i] = zr.readLine(); //assigns each line of text in drinks.txt to an array
+		for (int i = 0; i < zLines; i++) drinks[i] = zr.readLine(); //assigns each line of text in drinks.txt to an array
 
 		//PROGRAM ACTUALLY STARTS HERE
 		Scanner kbReader = new Scanner(System.in);
@@ -171,7 +171,7 @@ public class Bartender
 								 pineapple = 0;
 								 System.out.println("Shaker cleared.");
 								 break;
-							case 17: //END PROGRAM
+							case 16: //END PROGRAM
 								 for (int i = 0; i < info.length; i++) {
 								 	String[] combo = info[i].split(" "); //splits a line of text into seperate words, assigns all to an array
 								 	Double[] numCombo = new Double[combo.length];
@@ -180,8 +180,9 @@ public class Bartender
 								 	}
 								 	if (numCombo[0] == syrup && numCombo[1] == sugar && numCombo[2] == grenadine && numCombo[3] == gin && numCombo[4] == vodka && numCombo[5] == rum && numCombo[6] == liquer && numCombo[7] == vermouth && numCombo[8] == tequila && numCombo[9] == lime && numCombo[10] == lemon && numCombo[11] == pineapple) {
 								 		System.out.println("You have made: " + drinks[i]);
-								 		System.out.println(desc[i]);
-								 		isMixed=true;
+								 		System.out.println(desc[i*2]);
+								 		System.out.println(desc[i*2+1]);
+								 		System.exit(0);
 								 		//prints out the drink name and a short description
 								 	}
 								 }
@@ -190,7 +191,7 @@ public class Bartender
 								 	//prompt if shaker is empty
 								 }
 								 else {
-								 	System.out.println("You have made: Something.");
+								 	System.out.println("You have made: Something");
 								 	System.out.println("That recipe isn't in this programs database, but you are encouraged to experiment with different combinations.");
 								 	isMixed=true;
 								 	//prompt if recipe is not known to program
