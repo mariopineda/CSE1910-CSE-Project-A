@@ -86,7 +86,7 @@ public class Bartender
 		boolean addingStuff = false; //used to prevent errors from resetting program
 		while (!isMixed) {
 			System.out.println();
-			System.out.println("Enter a value to add an ingredient:");
+			System.out.print("Enter a value to add an ingredient: ");
 				if (kbReader.hasNextInt()) { //user input must be an integer and be between 1 and 16
 					int input = kbReader.nextInt();
 					if (input > 0 && input <= 16) { //checks if input is within valid range
@@ -144,7 +144,7 @@ public class Bartender
 							switch(input) {
 								case 13: for (int i = 0; i < guide.length; i++) System.out.println(guide[i]); //prints out recipe book
 								break;
-								case 14: if(syrup != 0) System.out.println("Syrup: " + syrup + " oz.");
+								case 14: if(syrup != 0) System.out.println("Simple Syrup: " + syrup + " oz.");
 									 if(sugar != 0) System.out.println("Sugar: " + sugar + " oz.");
 									 if(grenadine != 0) System.out.println("Grenadine: " + grenadine + " oz.");
 									 if(gin != 0) System.out.println("Gin: " + gin + " oz.");
@@ -156,6 +156,7 @@ public class Bartender
 									 if(lime != 0) System.out.println("Lime juice: " + lime + " oz.");
 									 if(lemon != 0) System.out.println("Orange juice: " + lemon + " oz.");
 									 if(pineapple != 0) System.out.println("Pineapple juice: " + pineapple + " oz.");
+									 if(syrup + sugar + grenadine + gin + vodka + rum + liquer + vermouth + tequila + lime + lemon + pineapple == 0) System.out.println("Nothing currently in shaker.");
 									 break;
 								case 15: syrup = 0;
 									 sugar = 0;
