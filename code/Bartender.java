@@ -89,10 +89,10 @@ public class Bartender
 									System.out.println("Please enter a valid number.");
 									kbReader.next();
 								}
-								else if (input + syrup + sugar + grenadine + gin + vodka + rum + liquer + vermouth + tequila + lime + lemon + pineapple + water > 16) {
+								else if (oz + syrup + sugar + grenadine + gin + vodka + rum + liquer + vermouth + tequila + lime + lemon + pineapple + water > 16) {
 									//checks if sum of all ingredients is less than 16
 									System.out.println("Error: shaker cannot exceed 16 oz.");
-									addingStuff = false;
+									System.out.println();
 								}
 								else {
 									switch (input) {
