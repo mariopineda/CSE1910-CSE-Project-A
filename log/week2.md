@@ -46,3 +46,14 @@ With this changed I decided to add a different modifier to the game. I added a t
   
   Another challenge is getting feedback of the "mostly finished" game from my peers. The game has to work well and be appealing to the player and spectators so I hope the changes I made to the standard game of pong still make it appealing to all parties who wish to play it and/or watch it. After all, the whole point of this project is to simulate a finished piece of work to be shown to people who will judge the game and decide if it works and looks good enough to make it to market. I feel ready to make any changes necessary to make the game great and look forward to the process of debugging and working through any glitches that are shown during presentation. 
 
+# Marking Rubric
+
+| Concerns (_Areas that need work_) | Criteria (_Criteria for proficiency_) | Advanced (_Evidence of exceeding proficiency_) |
+| ---                               | ---                                   | ---                                            |
+| | Log and commit message show evidence of progress and that class time has been used efficiently | X |
+| | All required questions have been answered with sufficient detail | X |
+| | Log messages are accurate and constent with commit history | X |
+| | Appropriate Markdown syntax is used | X |
+| | Complete sentences/paragraphs and correct English spelling, grammar and punctuation is used | X |
+
+15/15 (100%)
