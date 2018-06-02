@@ -56,11 +56,20 @@ public class Bartender
 		//syrup sugar grenadine gin vodka rum liquer vermouth tequila lime lemon pineapple water
 		BufferedReader lr3 = new BufferedReader(new FileReader("info.txt"));
 		int iLines = 0;
-		while (lr3.readLine() != null) iLines++; //reads number of liens to allocate memory to array
+		while (lr3.readLine() != null) iLines++; //reads number of lines to allocate memory to array
 		lr3.close();
 		BufferedReader ir = new BufferedReader(new FileReader("info.txt"));
 		String[] info = new String[iLines];
 		for (int i = 0; i < iLines; i++) info[i] = ir.readLine(); //assigns each line of text in info.txt to a string in array
+		
+		//DRINK NAMES TEXT FILE
+		BufferedReader lr4 = new BufferedReader(new FileReader("drinks.txt"));
+		int zLines = 0;
+		while (lr4.readLine() != null) zLines++; //reads number of lines to allocate memory to array
+		lr4.close();
+		BufferedReader zr = new BufferedReader(new FileReader("drinks.txt"));
+		String[] drinks = new String[zLines];
+		for (int i = 0; i < iLines; i++) drinks[i] = zr.readLine(); //assigns each line of text in drinks.txt to an array
 
 		//PROGRAM ACTUALLY STARTS HERE
 		Scanner kbReader = new Scanner(System.in);
@@ -176,7 +185,7 @@ public class Bartender
 								 		numCombo[j] = Double.parseDouble(combo[j]);
 								 	}
 								 	if (numCombo[0] == syrup && numCombo[1] == sugar && numCombo[2] == grenadine && numCombo[3] == gin && numCombo[4] == vodka && numCombo[5] == rum && numCombo[6] == liquer && numCombo[7] == vermouth && numCombo[8] == tequila && numCombo[9] == lime && numCombo[10] == lemon && numCombo[11] == pineapple && numCombo[12] == water) {
-								 		System.out.println("hello world");
+								 		System.out.println("You have made: " + drinks[i]);
 								 		isMixed=true;
 								 	}
 								 }
