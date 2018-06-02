@@ -21,8 +21,8 @@ boolean upL, downL;//Variables for movement of left paddle with keyPressed/Relea
 int padRX, padRY;//Create integers for right paddle, known here as padR. Integers follow same order as above
 boolean upR, downR;//Variables for movement of right paddle with keyPressed/Released
 
-int scoreL = 0;//Integer for score for left paddle
-int scoreR = 0;//Integer for score for right paddle
+int scoreL = -1;//Integer for score for left paddle
+int scoreR = -1;//Integer for score for right paddle
 
 int winScore = 3;//Integer for which the game will end at certain score, subject to change.
 
@@ -33,8 +33,8 @@ void setup() {
   y = height/2;
   w = 25;
   h = 25;
-  speedX = 4;
-  speedY = 3;
+  speedX = 5;
+  speedY = 2;
   
   rectMode(CENTER);
   padLX = 50;//Left paddle coordinates
@@ -170,13 +170,13 @@ void gameOverPage(String text) {//The page that displays when maximum score is r
   if(mousePressed) {//Mouse press resets game once you see game over screen
     scoreR = 0;
     scoreL = 0;
-    speedX = 4;
-    speedY = 3;
+    speedX = 5;
+    speedY = 2;
   }
 }
 
 void splashPage() {
-  if(scoreL == 0 && scoreR == 0) {
+  if(scoreL == -1 && scoreR == -1) {
   
     speedX = 0;
     speedY = 0;
@@ -186,13 +186,15 @@ void splashPage() {
     text("This side is player 2", 575, height/4);
     text("Player 1 uses S and W to move the paddle", width/4, height/4 + 40);
     text("Player 2 uses the UP and DOWN arrows", 575, height/4 + 40);
+    text("Click the mouse to play", width/2, height/2.5);
     
     textSize(15);
   }
   
   if(mousePressed) {
-    speedX = 4;
-    speedY = 3;
+    setup();
+    scoreR = 0;
+    scoreL = 0;
   }
 }
 
