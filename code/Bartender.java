@@ -75,7 +75,6 @@ public class Bartender
 		System.out.println("-----------------------");
 		System.out.println("VIRTUAL BARTENDER 4000");
 		System.out.println("-----------------------");
-		System.out.println();
 		System.out.println("1. Simple syrup | 2. Sugar | 3. Grenadine");
 		System.out.println("4. Gin | 5. Vodka | 6. Rum | 7. Liquer | 8. Vermouth | 9. Tequila ");
 		System.out.println("10. Lime juice | 11. Orange juice | 12. Pineapple juice");
