@@ -13,14 +13,17 @@ public class Tic-Tac-Toe
   drawBoard(board);// Draws empty game board
   int row, column; // Cell coordinates on the board
 
-  if(playerNum == 2) //AI
+  int player;
+  player = Integer.parseInt(args[0]);//Asks Player to be X
+
+ if(player == O) //AI
+   {
+    int bestVal = Integer.MIN_VALUE;// Declares Best value with the minimum value
+    int bestSpot = 0;
+    for(int i = 0; i < node.length; i++)//Declares Best Spot has to be empty
     {
-     int bestVal = Integer.MIN_VALUE;// Declares Best value with the minimum value
-     int bestSpot = 0;
-     for(int i = 0; i < node.length; i++)//Declares Best Spot has to be empty
-     {
       if(node[i] != '-')
-         continue;
+        continue;
       node[i] = getSymbol(playerNum);
       int value = miniMax(node, 1);
       if(value > bestVal)//Tells if value of the integer is more than the best value
@@ -105,10 +108,10 @@ public static void drawBoard(int[] board){
    default:
      System.out.println("Wrong element on board");
      System.exit(1);
-  }
+   }
   System.out.println("|");
+  }
  }
-}
 
 /** Check whether current board state corresponds to the win of one
 *of the players */
@@ -119,7 +122,7 @@ public static int checkGameStatus(int[][] board){
     return 2;//Player O won
 
  return 0;//Game continues
-}
+ }
 
 /** Checks whether digit in number parameter forms
 * horizontal/vertical/diagonal line */
@@ -166,4 +169,4 @@ public static boolean isFormLine(int[][] board, int number){
 
  return false;//If none of the lines is formed
  }
-} 
+}
