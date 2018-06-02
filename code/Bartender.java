@@ -200,10 +200,10 @@ public class Bartender
 							}
 						}
 					}
-					else System.out.println("Please enter an integer between 1 and 17.");
+					else System.out.println("Please enter an integer between 1 and 16.");
 				}
 				else {
-					System.out.println("Please enter an integer between 1 and 17.");
+					System.out.println("Please enter an integer between 1 and 16.");
 					kbReader.next();
 				}
 		}
