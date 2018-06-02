@@ -170,13 +170,15 @@ public class Bartender
 								 break;
 							case 17: //END PROGRAM
 								 for (int i = 0; i < info.length; i++) {
-								 	String[] combo = info[i].split(" ");
+								 	String[] combo = info[i].split(" "); //splits a line of text into seperate words, assigns all to an array
 								 	Double[] numCombo = new Double[combo.length];
-								 	for (int j = 0; j < combo.length; j++) {
+								 	for (int j = 0; j < combo.length; j++) { //converts all values to double value
 								 		numCombo[j] = Double.parseDouble(combo[j]);
 								 	}
-								 	System.out.println(numCombo[0]);
-								 	System.out.println("Hello world");
+								 	if (numCombo[0] == syrup && numCombo[1] == sugar && numCombo[2] == grenadine && numCombo[3] == gin && numCombo[4] == vodka && numCombo[5] == rum && numCombo[6] == liquer && numCombo[7] == vermouth && numCombo[8] == tequila && numCombo[9] == lime && numCombo[10] == lemon && numCombo[11] == pineapple && numCombo[12] == water) {
+								 		System.out.println("hello world");
+								 		isMixed=true;
+								 	}
 								 }
 								 break;
 						}
