@@ -33,6 +33,26 @@ public class Tic-Tac-Toe
      }
      return bestSpot;
     }
+    else
+    {
+     int bestVal = Integer.MAX_VALUE;//Declares Best max value
+     int bestSpot = 0;//Declares Best Spot Empty
+     for(int i = 0; i < node.length; i++)
+     {
+      if(node[i] != '-')
+         continue;
+      node[i] = getSymbol(playerNum);
+      int value = miniMax(node, 2);
+      if(value < bestVal)
+      {
+       bestVal = value;
+       bestSpot = i;
+      }
+      node[i] = '-';
+     }
+     return bestSpot;
+    }
+   }
 
   for (int i = 0; i < 9; i++){//Game will last 9 turns
 
