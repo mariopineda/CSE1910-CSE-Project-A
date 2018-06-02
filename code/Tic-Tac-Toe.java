@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Tic-Tac-Toe
+public class TicTacToe
 {
  public static void main(String args[])
  {
