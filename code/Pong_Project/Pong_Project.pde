@@ -44,8 +44,8 @@ void setup() {
   padRY = height/2;
   
   padLW = 20;//paddle parameters
-  padLH = 50;//In these 3 cases padL represents both since they have the same size.
-  padLS = 5;
+  padLH = 50;//In these 3 cases padL represents both since they have the same size and speed.
+  padLS = 5;//Will be the same wherever these variables are listed.
   
   textSize(30);//Text size and alignment for the points of each player
   textAlign(CENTER, CENTER);
@@ -65,6 +65,7 @@ void draw() {
   
   scores();//Call from void scores
   gameOver();//call from void gameOver
+  splashPage();//call from void splashPage
 }
 
 void padLRDraw() {//Draw the paddles
@@ -169,6 +170,27 @@ void gameOverPage(String text) {//The page that displays when maximum score is r
   if(mousePressed) {//Mouse press resets game once you see game over screen
     scoreR = 0;
     scoreL = 0;
+    speedX = 4;
+    speedY = 3;
+  }
+}
+
+void splashPage() {
+  if(scoreL == 0 && scoreR == 0) {
+  
+    speedX = 0;
+    speedY = 0;
+  
+    text("Welcome to Pong", width/2, height/6);
+    text("This side is player 1", width/4, height/4);
+    text("This side is player 2", 575, height/4);
+    text("Player 1 uses S and W to move the paddle", width/4, height/4 + 40);
+    text("Player 2 uses the UP and DOWN arrows", 575, height/4 + 40);
+    
+    textSize(15);
+  }
+  
+  if(mousePressed) {
     speedX = 4;
     speedY = 3;
   }
