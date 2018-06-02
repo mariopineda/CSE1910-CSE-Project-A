@@ -134,6 +134,7 @@ void wallBounce() {//If and if else statements to bounce off wall
     speedX = -speedX;
     scoreL = scoreL + 1;
   }
+  
   else if ( x < 0 + w/2) {
     setup();//Resets to initial setup
     scoreR = scoreR + 1;
@@ -146,6 +147,7 @@ void wallBounce() {//If and if else statements to bounce off wall
   else if( y < 0 + h/2) {
     speedY = -speedY;
   }
+  
 }
 
 void gameOver() {//Displays written text once either player reaches score limit
@@ -175,13 +177,13 @@ void gameOverPage(String text) {//The page that displays when maximum score is r
   }
 }
 
-void splashPage() {
-  if(scoreL == -1 && scoreR == -1) {
+void splashPage() {//Page that displays at the beginning of program
+  if(scoreL == -1 && scoreR == -1) {//Set score values so that page runs only when scores are this number
   
-    speedX = 0;
+    speedX = 0;//Ball pauses until mouse is pressed
     speedY = 0;
   
-    text("Welcome to Pong", width/2, height/6);
+    text("Welcome to Pong", width/2, height/6);//Text that displays during splash page
     text("This side is player 1", width/4, height/4);
     text("This side is player 2", 575, height/4);
     text("Player 1 uses S and W to move the paddle", width/4, height/4 + 40);
@@ -191,7 +193,7 @@ void splashPage() {
     textSize(15);
   }
   
-  if(mousePressed) {
+  if(mousePressed) {//Game starts when mouse is pressed and points are set to 0 to start the game.
     setup();
     scoreR = 0;
     scoreL = 0;
