@@ -80,17 +80,17 @@ public class Bartender
 		boolean isMixed = false; //program will end once set to true
 		boolean addingStuff = false; //used to prevent errors from resetting program
 		while (!isMixed) {
-		Sysmem.out.println();
+		System.out.println();
 		System.out.println("Enter a value to add an ingredient:");
 		System.out.println("1. Simple syrup | 2. Sugar | 3. Grenadine");
 		System.out.println("4. Gin | 5. Vodka | 6. Rum | 7. Liquer | 8. Vermouth | 9. Tequila");
-		System.out.println("10. Lime juice | 11. Lemon juice | 12. Pineapple juice | 13. Water");
-		System.out.println("14. Recipe book | 15. Check shaker | 16. Empty shaker | 17. Mix contents");
+		System.out.println("10. Lime juice | 11. Lemon juice | 12. Pineapple juice");
+		System.out.println("13. Recipe book | 14. Check shaker | 15. Empty shaker | 16. Mix contents");
 		System.out.println();
-			if (kbReader.hasNextInt()) { //user input must be an integer and be between 1 and 14
+			if (kbReader.hasNextInt()) { //user input must be an integer and be between 1 and 16
 				int input = kbReader.nextInt();
-				if (input >= 0 && input <= 17) { //checks if input is within valid range
-					if (input <= 13) { //user adds an ingredient
+				if (input >= 0 && input <= 16) { //checks if input is within valid range
+					if (input <= 12) { //user adds an ingredient
 						addingStuff = true; //loops until an ingredient is added, will go back to ingredient select screen after
 						System.out.print("Enter an amount (oz.): ");
 						while (addingStuff) {
@@ -100,7 +100,7 @@ public class Bartender
 									System.out.println("Please enter a valid number.");
 									kbReader.next();
 								}
-								else if (oz + syrup + sugar + grenadine + gin + vodka + rum + liquer + vermouth + tequila + lime + lemon + pineapple + water > 16) {
+								else if (oz + syrup + sugar + grenadine + gin + vodka + rum + liquer + vermouth + tequila + lime + lemon + pineapple > 16) {
 									//checks if sum of all ingredients is less than 16
 									System.out.println("Error: shaker cannot exceed 16 oz.");
 								}
@@ -130,8 +130,6 @@ public class Bartender
 											break;
 										case 12: pineapple += oz;
 											break;
-										case 13: water += oz;
-											break;
 									}
 								}
 								addingStuff = false;
@@ -144,9 +142,9 @@ public class Bartender
 					}
 					else { //if the user picks one of the non-ingredients
 						switch(input) {
-							case 14: for (int i = 0; i <= guide[i].length(); i++) System.out.println(guide[i]); //prints out recipe book
+							case 13: for (int i = 0; i <= guide[i].length(); i++) System.out.println(guide[i]); //prints out recipe book
 							break;
-							case 15: if(syrup != 0) System.out.println("Syrup: " + syrup + " oz.");
+							case 14: if(syrup != 0) System.out.println("Syrup: " + syrup + " oz.");
 								 if(sugar != 0) System.out.println("Sugar: " + sugar + " oz.");
 								 if(grenadine != 0) System.out.println("Grenadine: " + grenadine + " oz.");
 								 if(gin != 0) System.out.println("Gin: " + gin + " oz.");
@@ -158,9 +156,8 @@ public class Bartender
 								 if(lime != 0) System.out.println("Lime juice: " + lime + " oz.");
 								 if(lemon != 0) System.out.println("Lemon juice: " + lemon + " oz.");
 								 if(pineapple != 0) System.out.println("Pineapple juice: " + pineapple + " oz.");
-								 if(water != 0) System.out.println("Water: " + water + " oz.");
 								 break;
-							case 16: syrup = 0;
+							case 15: syrup = 0;
 								 sugar = 0;
 								 grenadine = 0;
 								 gin = 0;
@@ -172,7 +169,6 @@ public class Bartender
 							 	 lime = 0;
 								 lemon = 0;
 								 pineapple = 0;
-								 water = 0;
 								 System.out.println("Shaker cleared.");
 								 break;
 							case 17: //END PROGRAM
@@ -182,14 +178,14 @@ public class Bartender
 								 	for (int j = 0; j < combo.length; j++) { //converts all values to double value
 								 		numCombo[j] = Double.parseDouble(combo[j]);
 								 	}
-								 	if (numCombo[0] == syrup && numCombo[1] == sugar && numCombo[2] == grenadine && numCombo[3] == gin && numCombo[4] == vodka && numCombo[5] == rum && numCombo[6] == liquer && numCombo[7] == vermouth && numCombo[8] == tequila && numCombo[9] == lime && numCombo[10] == lemon && numCombo[11] == pineapple && numCombo[12] == water) {
+								 	if (numCombo[0] == syrup && numCombo[1] == sugar && numCombo[2] == grenadine && numCombo[3] == gin && numCombo[4] == vodka && numCombo[5] == rum && numCombo[6] == liquer && numCombo[7] == vermouth && numCombo[8] == tequila && numCombo[9] == lime && numCombo[10] == lemon && numCombo[11] == pineapple) {
 								 		System.out.println("You have made: " + drinks[i]);
 								 		System.out.println(desc[i]);
 								 		isMixed=true;
 								 		//prints out the drink name and a short description
 								 	}
 								 }
-								 if (syrup + sugar + grenadine + gin + vodka + rum + liquer + vermouth + tequila + lime + lemon + pineapple + water == 0) {
+								 if (syrup + sugar + grenadine + gin + vodka + rum + liquer + vermouth + tequila + lime + lemon + pineapple == 0) {
 								 	System.out.println("Please enter something into the shaker."); 
 								 	//prompt if shaker is empty
 								 }
