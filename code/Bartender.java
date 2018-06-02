@@ -76,20 +76,20 @@ public class Bartender
 		System.out.println("-----------------------");
 		System.out.println("VIRTUAL BARTENDER 4000");
 		System.out.println("-----------------------");
+		System.out.println();
+		System.out.println("1. Simple syrup | 2. Sugar | 3. Grenadine");
+		System.out.println("4. Gin | 5. Vodka | 6. Rum | 7. Liquer | 8. Vermouth | 9. Tequila");
+		System.out.println("10. Lime juice | 11. Orange juice | 12. Pineapple juice");
+		System.out.println("13. Recipe book | 14. Check shaker | 15. Empty shaker | 16. Mix contents");
 
 		boolean isMixed = false; //program will end once set to true
 		boolean addingStuff = false; //used to prevent errors from resetting program
 		while (!isMixed) {
 			System.out.println();
 			System.out.println("Enter a value to add an ingredient:");
-			System.out.println("1. Simple syrup | 2. Sugar | 3. Grenadine");
-			System.out.println("4. Gin | 5. Vodka | 6. Rum | 7. Liquer | 8. Vermouth | 9. Tequila");
-			System.out.println("10. Lime juice | 11. Orange juice | 12. Pineapple juice");
-			System.out.println("13. Recipe book | 14. Check shaker | 15. Empty shaker | 16. Mix contents");
-			System.out.println();
 				if (kbReader.hasNextInt()) { //user input must be an integer and be between 1 and 16
 					int input = kbReader.nextInt();
-					if (input >= 0 && input <= 16) { //checks if input is within valid range
+					if (input > 0 && input <= 16) { //checks if input is within valid range
 						if (input <= 12) { //user adds an ingredient
 							addingStuff = true; //loops until an ingredient is added, will go back to ingredient select screen after
 							System.out.print("Enter an amount (oz.): ");
