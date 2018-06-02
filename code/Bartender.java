@@ -10,13 +10,12 @@ public class Bartender
 {
 	public static void main(String args[]) throws IOException
 	{
-		//TO DO: ADD LIMIT TO MIXER CAPACITY
-	
+
 		//SWEETS
 		double syrup = 0;
 		double sugar = 0;
 		double grenadine = 0;
-		
+
 		//SPIRITS
 		double gin = 0;
 		double vodka = 0;
@@ -24,14 +23,14 @@ public class Bartender
 		double liquer = 0;
 		double vermouth = 0;
 		double tequila = 0;
-		
+
 		//SOURS
 		double lime = 0;
 		double lemon = 0;
 		double pineapple = 0;
-		
+
 		double water = 0;
-		
+
 		//RECIPE BOOK TEXT FILE
 		BufferedReader lr1 = new BufferedReader(new FileReader("guide.txt"));
 		int gLines = 0;
@@ -41,7 +40,7 @@ public class Bartender
 		String[] guide = new String[gLines];
 		for(int i = 0; i < gLines; i++) guide[i] = gr.readLine(); //assigns each line of text in guide.text to array
 		gr.close();
-		
+
 		//DRINK DESCRIPTIONS TEXT FILE
 		BufferedReader lr2 = new BufferedReader(new FileReader("desc.txt"));
 		int dLines = 0;
@@ -61,7 +60,7 @@ public class Bartender
 		BufferedReader ir = new BufferedReader(new FileReader("info.txt"));
 		String[] info = new String[iLines];
 		for (int i = 0; i < iLines; i++) info[i] = ir.readLine(); //assigns each line of text in info.txt to a string in array
-		
+
 		//DRINK NAMES TEXT FILE
 		BufferedReader lr4 = new BufferedReader(new FileReader("drinks.txt"));
 		int zLines = 0;
@@ -78,7 +77,7 @@ public class Bartender
 		System.out.println("-----------------------");
 		System.out.println();
 		System.out.println("1. Simple syrup | 2. Sugar | 3. Grenadine");
-		System.out.println("4. Gin | 5. Vodka | 6. Rum | 7. Liquer | 8. Vermouth | 9. Tequila");
+		System.out.println("4. Gin | 5. Vodka | 6. Rum | 7. Liquer | 8. Vermouth | 9. Tequila ");
 		System.out.println("10. Lime juice | 11. Orange juice | 12. Pineapple juice");
 		System.out.println("13. Recipe book | 14. Check shaker | 15. Empty shaker | 16. Mix contents");
 
@@ -144,7 +143,7 @@ public class Bartender
 							switch(input) {
 								case 13: for (int i = 0; i < guide.length; i++) System.out.println(guide[i]); //prints out recipe book
 								break;
-								case 14: if(syrup != 0) System.out.println("Simple Syrup: " + syrup + " oz.");
+								case 14: if(syrup != 0) System.out.println("Simple Syrup: " + syrup + " oz."); //program will not display an ingredient if it is set to 0
 									 if(sugar != 0) System.out.println("Sugar: " + sugar + " oz.");
 									 if(grenadine != 0) System.out.println("Grenadine: " + grenadine + " oz.");
 									 if(gin != 0) System.out.println("Gin: " + gin + " oz.");
@@ -158,7 +157,7 @@ public class Bartender
 									 if(pineapple != 0) System.out.println("Pineapple juice: " + pineapple + " oz.");
 									 if(syrup + sugar + grenadine + gin + vodka + rum + liquer + vermouth + tequila + lime + lemon + pineapple == 0) System.out.println("Nothing currently in shaker.");
 									 break;
-								case 15: syrup = 0;
+								case 15: syrup = 0; //sets all ingredients to 0
 									 sugar = 0;
 									 grenadine = 0;
 									 gin = 0;
