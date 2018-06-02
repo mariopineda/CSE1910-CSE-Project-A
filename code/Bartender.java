@@ -142,7 +142,7 @@ public class Bartender
 					}
 					else { //if the user picks one of the non-ingredients
 						switch(input) {
-							case 13: for (int i = 0; i <= guide[i].length(); i++) System.out.println(guide[i]); //prints out recipe book
+							case 13: for (int i = 0; i < guide.length; i++) System.out.println(guide[i]); //prints out recipe book
 							break;
 							case 14: if(syrup != 0) System.out.println("Syrup: " + syrup + " oz.");
 								 if(sugar != 0) System.out.println("Sugar: " + sugar + " oz.");

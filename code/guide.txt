@@ -1,7 +1,9 @@
-Hello world
-this is some text
-also some text
-some more text
-text
-
-
+----------------------------------
+VIRTUAL BARTENDER 5000 RECIPE BOOK
+----------------------------------
+Negroni: 1 oz. gin, 1 oz. liquer, 1 oz. vermouth
+Gin & Tonic: 1 oz. gin
+Martini: 2 oz. gin or vodka, 1 oz. vermouth
+Daiquiri: 0.75 oz. simple syrup, 2 oz. rum, 1 oz lime juice
+Gimlet: 2 oz. gin or vodka, 0.66 oz. lime juice
+Margarita: 1 oz. liquer, 2 oz. tequila, 1 oz. lime juice
