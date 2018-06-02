@@ -84,7 +84,7 @@ public class Bartender
 		System.out.println("Enter a value to add an ingredient:");
 		System.out.println("1. Simple syrup | 2. Sugar | 3. Grenadine");
 		System.out.println("4. Gin | 5. Vodka | 6. Rum | 7. Liquer | 8. Vermouth | 9. Tequila");
-		System.out.println("10. Lime juice | 11. Lemon juice | 12. Pineapple juice");
+		System.out.println("10. Lime juice | 11. Orange juice | 12. Pineapple juice");
 		System.out.println("13. Recipe book | 14. Check shaker | 15. Empty shaker | 16. Mix contents");
 		System.out.println();
 			if (kbReader.hasNextInt()) { //user input must be an integer and be between 1 and 16
@@ -154,7 +154,7 @@ public class Bartender
 								 if(vermouth != 0) System.out.println("Vermouth: " + vermouth + " oz.");
 								 if(tequila != 0) System.out.println("Tequila: " + tequila + " oz.");
 								 if(lime != 0) System.out.println("Lime juice: " + lime + " oz.");
-								 if(lemon != 0) System.out.println("Lemon juice: " + lemon + " oz.");
+								 if(lemon != 0) System.out.println("Orange juice: " + lemon + " oz.");
 								 if(pineapple != 0) System.out.println("Pineapple juice: " + pineapple + " oz.");
 								 break;
 							case 15: syrup = 0;
