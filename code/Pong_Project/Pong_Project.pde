@@ -33,9 +33,10 @@ void setup() {
   y = height/2;
   w = 25;
   h = 25;
-  speedX = 5;
-  speedY = 2;
+  speedX = 4;
+  speedY = 3;
   
+
   rectMode(CENTER);
   padLX = 50;//Left paddle coordinates
   padLY = height/2;
@@ -72,6 +73,21 @@ void padLRDraw() {//Draw the paddles
   fill(255);
   rect(padLX, padLY, padLW, padLH);
   rect(padRX, padRY, padLW, padLH);
+  
+  if(millis() > 5000) {
+    fill(0);
+    strokeWeight(.1);
+    stroke(255);
+    rect(padLX, padLY, padLW, padLH);
+    rect(padRX, padRY, padLW, padLH);
+  }
+  if(millis() > 10000) {
+    fill(255);
+    strokeWeight(0);
+    stroke(0);
+    rect(padLX, padLY, padLW, padLH);
+    rect(padRX, padRY, padLW, padLH);
+  }
 }
 
 void padLRMove () {//Move the paddles with corresponding keys listed in void keyPressed & keyReleased
@@ -107,12 +123,12 @@ void padLRLimit() {//Set window limit so paddles dont move off screen
 void padLRHit(){//Set rules for if the ball hits the paddles
   if(x - w/2 < padLX + padLW/2 && y - h/2 < padLY + padLH/2 && y + h/2 > padLY - padLH/2) {
     if(speedX < 0) {//Fixes glitch if the ball hit under or above the paddle
-    speedX = -speedX;//Left paddle collision
+    speedX = -speedX + 1;//Left paddle collision
     }
   }
   else if(x + w/2 > padRX - padLW/2 && y - h/2 < padRY + padLH/2 && y + h/2 > padRY - padLH/2) {
     if(speedX > 0) {//Fixes glitch if the ball hit under or above the paddle
-    speedX = -speedX;//Right paddle collision
+    speedX = -speedX - 1;//Right paddle collision
     }
   }
 }
@@ -147,7 +163,7 @@ void wallBounce() {//If and if else statements to bounce off wall
   else if( y < 0 + h/2) {
     speedY = -speedY;
   }
-  
+ 
 }
 
 void gameOver() {//Displays written text once either player reaches score limit
@@ -172,8 +188,8 @@ void gameOverPage(String text) {//The page that displays when maximum score is r
   if(mousePressed) {//Mouse press resets game once you see game over screen
     scoreR = 0;
     scoreL = 0;
-    speedX = 5;
-    speedY = 2;
+    speedX = 4;
+    speedY = 3;
   }
 }
 
