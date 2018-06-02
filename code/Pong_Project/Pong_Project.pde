@@ -26,8 +26,8 @@ int scoreR = 0;//Integer for score for right paddle
 
 int winScore = 3;//Integer for which the game will end at certain score, subject to change.
 
-int timer;
-boolean dPaddles = false;
+int timer;//Timer for millis to make modifiers
+boolean dPaddles = false;//Variable for changing the paddle color. Also helps with splash screen
 void setup() {
   size(750,750);//Size of the canvas, subject to change
   
@@ -48,12 +48,12 @@ void setup() {
   
   padLW = 20;//paddle parameters
   padLH = 50;//In these 3 cases padL represents both since they have the same size and speed.
-  padLS = 5;//Will be the same wherever these variables are listed.
+  padLS = 10;//Will be the same wherever these variables are listed.
   
   textSize(30);//Text size and alignment for the points of each player
   textAlign(CENTER, CENTER);
   
-  timer = millis();
+  timer = millis();//Timer for each round
 }
 
 void draw() {
@@ -80,14 +80,36 @@ void padLRDraw() {//Draw the paddles
   rect(padLX, padLY, padLW, padLH);
   rect(padRX, padRY, padLW, padLH);
   if(dPaddles) { //boolean variable to stop timer from having effect at splash screen
-    if(millis() - timer > 15000) {//At 15 seconds into the round the paddles turn black
+    if(millis() - timer > 25000) {//At 15 seconds into the round the paddles turn black
       fill(0);
       strokeWeight(.1);
       stroke(255);
       rect(padLX, padLY, padLW, padLH);
       rect(padRX, padRY, padLW, padLH);
+      
+      fill(255);
+      text("Blind Mode", width/2, height/8);
+      textSize(20);
     }
-    if(millis() - timer > 25000) {//At 25 seconds the paddles turn white
+    if(millis() - timer > 33000) {//At 25 seconds the paddles turn white
+      fill(255);
+      strokeWeight(0);
+      stroke(0);
+      rect(padLX, padLY, padLW, padLH);
+      rect(padRX, padRY, padLW, padLH);
+    }
+    if(millis() - timer > 50000) {
+      fill(0);
+      strokeWeight(.1);
+      stroke(255);
+      rect(padLX, padLY, padLW, padLH);
+      rect(padRX, padRY, padLW, padLH);
+      
+      fill(255);
+      text("Blind Mode", width/2, height/8);
+      textSize(20);
+    }
+    if(millis() - timer > 65000) {
       fill(255);
       strokeWeight(0);
       stroke(0);
