@@ -21,8 +21,8 @@ boolean upL, downL;//Variables for movement of left paddle with keyPressed/Relea
 int padRX, padRY;//Create integers for right paddle, known here as padR. Integers follow same order as above
 boolean upR, downR;//Variables for movement of right paddle with keyPressed/Released
 
-int scoreL = -1;//Integer for score for left paddle
-int scoreR = -1;//Integer for score for right paddle
+int scoreL = 0;//Integer for score for left paddle
+int scoreR = 0;//Integer for score for right paddle
 
 int winScore = 3;//Integer for which the game will end at certain score, subject to change.
 
@@ -70,11 +70,7 @@ void draw() {
   
   scores();//Call from void scores
   gameOver();//call from void gameOver
-  splashPage();//call from void splashPage
-  
-  text(timer, 100,100 );
-  text(millis(), 100,200 );
-  text(millis() - timer,100,300); 
+  splashPage();//call from void splashPage 
 }
 
 void padLRDraw() {//Draw the paddles
@@ -203,7 +199,7 @@ void gameOverPage(String text) {//The page that displays when maximum score is r
 }
 
 void splashPage() {//Page that displays at the beginning of program
-  if(scoreL == -1 && scoreR == -1) {//Set score values so that page runs only when scores are this number
+  if(scoreL == 0 && scoreR == 0) {//Set score values so that page runs only when scores are this number
   
     speedX = 0;//Ball pauses until mouse is pressed
     speedY = 0;
