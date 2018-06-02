@@ -26,6 +26,8 @@ int scoreR = -1;//Integer for score for right paddle
 
 int winScore = 3;//Integer for which the game will end at certain score, subject to change.
 
+int timer;
+boolean dPaddles = false;
 void setup() {
   size(750,750);//Size of the canvas, subject to change
   
@@ -50,6 +52,8 @@ void setup() {
   
   textSize(30);//Text size and alignment for the points of each player
   textAlign(CENTER, CENTER);
+  
+  timer = millis();
 }
 
 void draw() {
@@ -67,26 +71,31 @@ void draw() {
   scores();//Call from void scores
   gameOver();//call from void gameOver
   splashPage();//call from void splashPage
+  
+  text(timer, 100,100 );
+  text(millis(), 100,200 );
+  text(millis() - timer,100,300); 
 }
 
 void padLRDraw() {//Draw the paddles
   fill(255);
   rect(padLX, padLY, padLW, padLH);
   rect(padRX, padRY, padLW, padLH);
-  
-  if(millis() > 5000) {
-    fill(0);
-    strokeWeight(.1);
-    stroke(255);
-    rect(padLX, padLY, padLW, padLH);
-    rect(padRX, padRY, padLW, padLH);
-  }
-  if(millis() > 10000) {
-    fill(255);
-    strokeWeight(0);
-    stroke(0);
-    rect(padLX, padLY, padLW, padLH);
-    rect(padRX, padRY, padLW, padLH);
+  if(dPaddles) { 
+    if(millis() - timer > 15000) {
+      fill(0);
+      strokeWeight(.1);
+      stroke(255);
+      rect(padLX, padLY, padLW, padLH);
+      rect(padRX, padRY, padLW, padLH);
+    }
+    if(millis() - timer > 25000) {
+      fill(255);
+      strokeWeight(0);
+      stroke(0);
+      rect(padLX, padLY, padLW, padLH);
+      rect(padRX, padRY, padLW, padLH);
+    }
   }
 }
 
@@ -213,6 +222,7 @@ void splashPage() {//Page that displays at the beginning of program
     setup();
     scoreR = 0;
     scoreL = 0;
+    dPaddles = true;
   }
 }
 
