@@ -1,11 +1,13 @@
 # Log Message for Major Project for Week 2
 ## What was your goal for the past week?
-My goal for the past week was to install games on the rasperry pi and move them into RetroPie's rom folder. Because I did not have a usb flash drive, I decided to use github to transfer games onto the raspverry pi. By using the ```git clone``` command on the raspberry pi terminal I cloned the repository with the games on it and them moved the games into their respective folder. First, I tried to install 3 n64 games, but soon discovered that keyboard input was not valid within the game. Secondly, I installed an NES game, which worked fine for keboard.
+My goal for the week was to have the program be able to take a line of a text file and split it into seperate terms. It then had to convert all of those terms into double values and compare them to values that the user would input. Also, I had to modify text files to include many different outcomes and finish a guide on how to use the program, which can be accessed inside the program. 
+
+Provided that I had finished the goal early, the rest of the project work time would be assigned to bug testing and fixing.
 ## Did you accomplish last week’s goal? Why/why not?
-I would say that I did accomplish last week's goal. The games can run with few errors and the controls (for the NES game) were solid enough to be playable.
+I would say that I did accomplish last week's goal. The program can run without bugs and includes many different input checks, so that the user cannot enter an invalid input, crashing the program. There is a small list of drinks with included description and recipe, but more could afford to be added. 
 ## What did you learn this week?
-I learned that individual roms have their own keybindings. For example, while the emulation station software is able to bind keys on the keyboard to mimic a controller, these keybinds still do not register for games that require a special controller, such as n64. My suspiscion is that because these games require a joystick to play, the keyboard is set to not register because the game is not optimized to handle key inputs where joystick controls would normally apply.
+I learned that Java does not read empty lines when counting the number of lines. When testing the program, I found that I often got an error that I tried to fix by changing the code, to no avail. Since one of the errors said that there was an array overflow, I figured that the program was trying to assign values to the array that the text file had been placed into, but was trying to add lines at the end even thought no memory had previously been allocated. After deleting the empty lines at the bottom of the text files, the program worked fine.
 ## What is your goal for next week?
-My goal for next week would be to correctly calibrate a controller that fits the needs of all games or find out which controller will suffice.
+Next week, my time will be mostly allocated to bug testing and fixes, along with adding more possible outcomes if I have time. Most of the project is finished at this time and I suspect not much more will need to be done for the final product to be ready. In addition, the program could be more user friendly.
 ## What are the main challenges you are facing next week?
-The main challenge next week is controller input. I will need to bring a usb controller that works and may even have to buy specialized controllers.
+The main challenge next week will be presenting it. The program works fine, but the user interface is a little cluttered.
