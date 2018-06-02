@@ -53,7 +53,11 @@ void setup() {
   textSize(30);//Text size and alignment for the points of each player
   textAlign(CENTER, CENTER);
   
+<<<<<<< HEAD
   timer = millis();//Timer for each round
+=======
+  timer = millis();//Timer for each round so that modifiers can reset each round.
+>>>>>>> 9ab7c721588f7beec5cdc4e8ab0ffbba98f131f4
 }
 
 void draw() {
