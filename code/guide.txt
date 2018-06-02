@@ -1,5 +1,5 @@
 ----------------------------------
-VIRTUAL BARTENDER 5000 RECIPE BOOK
+VIRTUAL BARTENDER 4000 RECIPE BOOK
 ----------------------------------
 Negroni: 1 oz. gin, 1 oz. liquer, 1 oz. vermouth
 Gin & Tonic: 1 oz. gin
