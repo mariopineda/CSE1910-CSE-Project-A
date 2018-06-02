@@ -12,6 +12,28 @@ public class Tic-Tac-Toe
 
   drawBoard(board);// Draws empty game board
   int row, column; // Cell coordinates on the board
+
+  if(playerNum == 2) //AI
+    {
+     int bestVal = Integer.MIN_VALUE;// Declares Best value with the minimum value
+     int bestSpot = 0;
+     for(int i = 0; i < node.length; i++)//Declares Best Spot has to be empty
+     {
+      if(node[i] != '-')
+         continue;
+      node[i] = getSymbol(playerNum);
+      int value = miniMax(node, 1);
+      if(value > bestVal)//Tells if value of the integer is more than the best value
+      {
+       bestVal = value;
+       bestSpot = i;
+      }
+
+      node[i] = '-';
+     }
+     return bestSpot;
+    }
+
   for (int i = 0; i < 9; i++){//Game will last 9 turns
 
    while (true){//Infinite loop to read coordinates
