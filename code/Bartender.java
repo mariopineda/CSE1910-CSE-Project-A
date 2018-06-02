@@ -53,6 +53,7 @@ public class Bartender
 		dr.close();
 
 		//DRINK CODE TEXT FILE
+		//syrup sugar grenadine gin vodka rum liquer vermouth tequila lime lemon pineapple water
 		BufferedReader lr3 = new BufferedReader(new FileReader("info.txt"));
 		int iLines = 0;
 		while (lr3.readLine() != null) iLines++; //reads number of liens to allocate memory to array
@@ -151,24 +152,33 @@ public class Bartender
 								 if(pineapple != 0) System.out.println("Pineapple juice: " + pineapple + " oz.");
 								 if(water != 0) System.out.println("Water: " + water + " oz.");
 								 System.out.println();
-							break;
+								 break;
 							case 16: syrup = 0;
-							sugar = 0;
-							grenadine = 0;
-							gin = 0;
-							vodka = 0;
-							rum = 0;
-							liquer = 0;
-							vermouth = 0;
-							tequila = 0;
-							lime = 0;
-							lemon = 0;
-							pineapple = 0;
-							water = 0;
-							System.out.println("Mixer cleared.");
-							break;
-							case 17: isMixed = true;
-							break;
+								 sugar = 0;
+								 grenadine = 0;
+								 gin = 0;
+								 vodka = 0;
+								 rum = 0;
+								 liquer = 0;
+								 vermouth = 0;
+								 tequila = 0;
+							 	 lime = 0;
+								 lemon = 0;
+								 pineapple = 0;
+								 water = 0;
+								 System.out.println("Mixer cleared.");
+								 break;
+							case 17: //END PROGRAM
+								 for (int i = 0; i < info.length; i++) {
+								 	String[] combo = info[i].split(" ");
+								 	Double[] numCombo = new Double[combo.length];
+								 	for (int j = 0; j < combo.length; j++) {
+								 		numCombo[j] = Double.parseDouble(combo[j]);
+								 	}
+								 	System.out.println(numCombo[0]);
+								 	System.out.println("Hello world");
+								 }
+								 break;
 						}
 					}
 				}
