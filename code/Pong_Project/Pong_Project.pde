@@ -212,6 +212,7 @@ void splashPage() {//Page that displays at the beginning of program
     textSize(15);
     textAlign(CENTER, CENTER);
     
+    text("Made by Caleb Kryton", width/2, height/12);
     text("Welcome to Pong!", width/2, height/6);//Text that displays during splash page
     text("This side is player 1", width/4, height/4);
     text("This side is player 2", 575, height/4);
