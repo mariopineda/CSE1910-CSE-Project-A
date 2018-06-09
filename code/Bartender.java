@@ -94,7 +94,6 @@ public class Bartender
 									double oz = kbReader.nextDouble();
 									if (oz <= 0) {
 										System.out.println("Please enter a valid number.");
-										kbReader.next();
 									}
 									else if (oz + syrup + sugar + grenadine + gin + vodka + rum + liquer + vermouth + tequila + lime + lemon + pineapple > 16) {
 										//checks if sum of all ingredients is less than 16
