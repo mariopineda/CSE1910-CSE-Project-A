@@ -80,7 +80,7 @@ void padLRDraw() {//Draw the paddles
   rect(padLX, padLY, padLW, padLH);
   rect(padRX, padRY, padLW, padLH);
   if(dPaddles) { //boolean variable to stop timer from having effect at splash screen
-    if(millis() - timer > 25000) {//At 15 seconds into the round the paddles turn black
+    if(millis() - timer > 10000) {//At 25 seconds into the round the paddles turn black
       fill(0);
       strokeWeight(.1);
       stroke(255);
@@ -91,14 +91,15 @@ void padLRDraw() {//Draw the paddles
       text("Blind Mode", width/2, height/8);
       textSize(20);
     }
-    if(millis() - timer > 33000) {//At 25 seconds the paddles turn white
+    if(millis() - timer > 15000) {//At 33 seconds the paddles turn white
       fill(255);
       strokeWeight(0);
       stroke(0);
       rect(padLX, padLY, padLW, padLH);
       rect(padRX, padRY, padLW, padLH);
+      text("", width/2, height/8);
     }
-    if(millis() - timer > 50000) {
+    if(millis() - timer > 50000) {//Timer at 55 seconds
       fill(0);
       strokeWeight(.1);
       stroke(255);
@@ -109,12 +110,13 @@ void padLRDraw() {//Draw the paddles
       text("Blind Mode", width/2, height/8);
       textSize(20);
     }
-    if(millis() - timer > 65000) {
+    if(millis() - timer > 65000) {//Timer at 65 seconds
       fill(255);
       strokeWeight(0);
       stroke(0);
       rect(padLX, padLY, padLW, padLH);
       rect(padRX, padRY, padLW, padLH);
+      text("", width/2, height/8);
     }
   }
 }
