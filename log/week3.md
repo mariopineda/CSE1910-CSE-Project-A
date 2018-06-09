@@ -1,11 +1,11 @@
 # Log Message for Major Project for Week 3
 ## What was your goal for the past week?
-My goal is to fix the link error and check if the weather data is displayed.
+My goal was to fix the two errors. One being a syntax error like this. TicTacToe.java:3: error: '{' expected public class Tic-Tac-Toe. Another was to be able to change turns and fix any other errors so that the game at least works properly. 
 ## Did you accomplish last week’s goal? Why/why not?
-No, because I haven't been able to fix the error.
+I was able to accomplish my goal. I was able to do this with the help of my teacher which allowed me to solve the errors. He showed me the way to make the code to check my board simpler which also was able to solve the errors and allowed the game to work properly.
 ## What did you learn this week?
-I learned the error had something to do with the JSONObject.
+I learned a simpler way to check the tic tac toe board if someone had won.
 ## What is your goal for next week?
-My goal is to find the solution to the problem.
+There is no class next week.
 ## What are the main challenges you are facing next week?
-The main challenge will be if I am able to fix the link problem.
+There are no challenges.
