@@ -29,8 +29,6 @@ public class Bartender
 		double lemon = 0;
 		double pineapple = 0;
 
-		double water = 0;
-
 		//RECIPE BOOK TEXT FILE
 		BufferedReader lr1 = new BufferedReader(new FileReader("guide.txt"));
 		int gLines = 0;
@@ -71,7 +69,7 @@ public class Bartender
 		for (int i = 0; i < zLines; i++) drinks[i] = zr.readLine(); //assigns each line of text in drinks.txt to an array
 
 		//PROGRAM ACTUALLY STARTS HERE
-		Scanner kbReader = new Scanner(System.in);
+		Scanner kbReader = new Scanner(System.in); //used to read user input
 		System.out.println("-----------------------");
 		System.out.println("VIRTUAL BARTENDER 4000");
 		System.out.println("-----------------------");
@@ -186,12 +184,12 @@ public class Bartender
 									 	}
 									 }
 									 if (syrup + sugar + grenadine + gin + vodka + rum + liquer + vermouth + tequila + lime + lemon + pineapple == 0) {
-									 	System.out.println("Please enter something into the shaker."); 
+									 	System.out.println("Please enter something into the shaker.");
 									 	//prompt if shaker is empty
 									 }
 									 else {
 									 	System.out.println("You have made: Something");
-									 	System.out.println("That recipe isn't in this programs database, but you are encouraged to experiment with different combinations.");
+									 	System.out.println("That recipe isn't in this program's database, but you are encouraged to experiment with different combinations.");
 									 	isMixed=true;
 									 	//prompt if recipe is not known to program
 									 }
