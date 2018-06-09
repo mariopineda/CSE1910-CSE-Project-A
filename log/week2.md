@@ -11,3 +11,15 @@ I learned that Java does not read empty lines when counting the number of lines.
 Next week, my time will be mostly allocated to bug testing and fixes, along with adding more possible outcomes if I have time. Most of the project is finished at this time and I suspect not much more will need to be done for the final product to be ready. In addition, the program could be more user friendly.
 ## What are the main challenges you are facing next week?
 The main challenge next week will be presenting it. The program works fine, but the user interface is a little cluttered.
+
+# Marking Rubric
+
+| Concerns (_Areas that need work_) | Criteria (_Criteria for proficiency_) | Advanced (_Evidence of exceeding proficiency_) |
+| ---                               | ---                                   | ---                                            |
+| | Log and commit message show evidence of progress and that class time has been used efficiently | X |
+| | All required questions have been answered with sufficient detail | X |
+| | Log messages are accurate and constent with commit history |X  |
+| | X Appropriate Markdown syntax is used |   |
+| | Complete sentences/paragraphs and correct English spelling, grammar and punctuation is used | X |
+
+14/15 (94%)
