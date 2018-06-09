@@ -28,6 +28,8 @@ int winScore = 3;//Integer for which the game will end at certain score, subject
 
 int timer;//Timer for millis to make modifiers
 boolean dPaddles = false;//Variable for changing the paddle color. Also helps with splash screen
+
+int duration;
 void setup() {
   size(750,750);//Size of the canvas, subject to change
   
@@ -79,8 +81,10 @@ void padLRDraw() {//Draw the paddles
   fill(255);
   rect(padLX, padLY, padLW, padLH);
   rect(padRX, padRY, padLW, padLH);
+  
+  duration = millis() - timer;
   if(dPaddles) { //boolean variable to stop timer from having effect at splash screen
-    if(millis() - timer > 10000) {//At 25 seconds into the round the paddles turn black
+    if((duration > 10000 && duration < 15000)||(duration > 50000 && duration < 65000)) {//At 25 seconds into the round the paddles turn black
       fill(0);
       strokeWeight(.1);
       stroke(255);
@@ -90,33 +94,6 @@ void padLRDraw() {//Draw the paddles
       fill(255);
       text("Blind Mode", width/2, height/8);
       textSize(20);
-    }
-    if(millis() - timer > 15000) {//At 33 seconds the paddles turn white
-      fill(255);
-      strokeWeight(0);
-      stroke(0);
-      rect(padLX, padLY, padLW, padLH);
-      rect(padRX, padRY, padLW, padLH);
-      text("", width/2, height/8);
-    }
-    if(millis() - timer > 50000) {//Timer at 55 seconds
-      fill(0);
-      strokeWeight(.1);
-      stroke(255);
-      rect(padLX, padLY, padLW, padLH);
-      rect(padRX, padRY, padLW, padLH);
-      
-      fill(255);
-      text("Blind Mode", width/2, height/8);
-      textSize(20);
-    }
-    if(millis() - timer > 65000) {//Timer at 65 seconds
-      fill(255);
-      strokeWeight(0);
-      stroke(0);
-      rect(padLX, padLY, padLW, padLH);
-      rect(padRX, padRY, padLW, padLH);
-      text("", width/2, height/8);
     }
   }
 }
