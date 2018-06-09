@@ -127,8 +127,8 @@ public class Bartender
 											case 12: pineapple += oz;
 												break;
 										}
-									}
 									addingStuff = false;
+									}
 								}
 								else {
 									System.out.println("Please enter a valid number.");
