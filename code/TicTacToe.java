@@ -52,7 +52,7 @@ public class TicTacToe
  }
 
  /**Visualize game board*/
- public static void drawBoard(int[] board)
+ public static void drawBoard(int[][] board)
  {
   for (int[] row : board)
   {
@@ -92,50 +92,39 @@ public class TicTacToe
  * horizontal/vertical/diagonal line */
  public static boolean isFormLine(int[][] board, int number)
  {
-  boolean lineFormed;
+  boolean lineFormed = false;
 
   //Check rows of the board for a line of 1 (denotes X) or 2(denotes O)
 
-  for (int i = 0; i < board.length; i++)
+  for (int i = 0; i < 3; i++)//i = row number
   {
-      lineFormed = true;
-      for (int j = 0; j < board[i].length; j++)
-        if (board[i][j - 1] != number || board[i][j] != number)
-           lineFormed = false;
-      if (lineFormed)
-         return true;//Horizontal line formed
+   if (board[i][0] == number &&
+       board[i][1] == number &&
+       board[i][2] == number)
+   {
+    lineFormed = true;//Line on a row formed
+   }
   }
-
-  //Check columns
-  for (int j = 0; j < board[0].length; j++)
+  for (int j = 0; j < 3; j++)//j = column number
   {
-      lineFormed = true;
-      for (int i = 1; i < board.length; i++)
-        if (board[i - 1][j] != number || board[i][j] != number)
-           lineFormed = false;
-      if (lineFormed)
-         return true;
+   if (board[0][j] == number &&
+       board[1][j] == number &&
+       board[2][j] == number)
+   {
+    lineFormed = true;//Line on a column formed
+   }
   }
-
-  //Check major diagonal
-  lineFormed = true;
-  for (int i = 1; i < board.length; i++)
-  {
-      if (board[i - 1][i - 1] != number || board[i][i] != number)
-           lineFormed = false;
-   if (lineFormed)
-      return true;
-
-  //Check minor diagonal
-  lineFormed = true;
-  for (int i = 1; i < board.length; i++)
-      if (board[board.length - i][i - 1] != number ||
-            board[board.length - i - 1][i] != number)
-          lineFormed = false;
-  if (lineFormed)
-      return true;
-
-  return false;//If none of the lines is formed
-  }
+   if (board[0][0] == number &&
+       board[1][1] == number &&
+       board[2][2] == number)
+   {
+    lineFormed = true;//Left Diagonal line formed
+   }
+   if (board[0][2] == number &&
+       board[1][1] == number &&
+       board[2][0] == number)
+   {
+    lineFormed = true;//Right Diagonal line formed
+   }
  }
 }
