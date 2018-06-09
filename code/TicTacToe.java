@@ -126,5 +126,6 @@ public class TicTacToe
    {
     lineFormed = true;//Right Diagonal line formed
    }
+ return lineFormed;
  }
 }
