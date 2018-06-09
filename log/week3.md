@@ -9,3 +9,15 @@ I learned a simpler way to check the tic tac toe board if someone had won.
 There is no class next week.
 ## What are the main challenges you are facing next week?
 There are no challenges.
+
+# Marking Rubric
+
+| Concerns (_Areas that need work_) | Criteria (_Criteria for proficiency_) | Advanced (_Evidence of exceeding proficiency_) |
+| ---                               | ---                                   | ---                                            |
+| | Log and commit message show evidence of progress and that class time has been used efficiently | X |
+| | All required questions have been answered with sufficient detail | X  |
+| | Log messages are accurate and constent with commit history | X   |
+| | X Appropriate Markdown syntax is used |   |
+| | Complete sentences/paragraphs and correct English spelling, grammar and punctuation is used | X |
+
+14/15 (94%)
