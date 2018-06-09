@@ -27,7 +27,7 @@ int scoreR = 0;//Integer for score for right paddle
 int winScore = 3;//Integer for which the game will end at certain score, subject to change.
 
 int timer;//Timer for millis to make modifiers
-boolean dPaddles = false;//Variable for changing the paddle color. Also helps with splash screen
+boolean dPaddles = false;//Variable for blind mode. Also helps with splash screen
 
 int duration;
 void setup() {
