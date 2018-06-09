@@ -84,11 +84,11 @@ void padLRDraw() {//Draw the paddles
   
   duration = millis() - timer;
   if(dPaddles) { //boolean variable to stop timer from having effect at splash screen
-    if((duration > 10000 && duration < 15000)||(duration > 50000 && duration < 65000)) {//At 25 seconds into the round the paddles turn black
+    if((duration > 10000 && duration < 15000)||(duration > 50000 && duration < 65000)) {//If and or expression to set timers for blind mode. 
       fill(0);
       strokeWeight(.1);
       stroke(255);
-      rect(padLX, padLY, padLW, padLH);
+      rect(padLX, padLY, padLW, padLH);//Renders second set of paddles, doesn't make any noticable difference. 
       rect(padRX, padRY, padLW, padLH);
       
       fill(255);
