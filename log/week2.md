@@ -11,3 +11,15 @@ public class Tic-Tac-Toe. Another was to be able to change turns and fix any oth
                 ^
 ## What are the main challenges you are facing next week?
 My main challenges is if I am able to solve the errors in a short amount of time in class.
+
+ # Marking Rubric
+
+| Concerns (_Areas that need work_) | Criteria (_Criteria for proficiency_) | Advanced (_Evidence of exceeding proficiency_) |
+| ---                               | ---                                   | ---                                            |
+| | Log and commit message show evidence of progress and that class time has been used efficiently | X |
+| | X All required questions have been answered with sufficient detail | |
+| | Log messages are accurate and constent with commit history | X |
+| | X Appropriate Markdown syntax is used | |
+| | Complete sentences/paragraphs and correct English spelling, grammar and punctuation is used | X |
+
+13/15 (87%)
